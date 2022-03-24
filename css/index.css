@@ -40,10 +40,21 @@ a:focus{
 	transition: all 0.3s;}
 
 
+.overflow{
+	overflow: hidden;
+}
+
 .hides{
     margin-left: -320px;
 }
 
+.colorBars{
+	color: black!important;
+}
+
+#bars{
+	color:white;
+}
 
 #content{
     width: 100%;
@@ -73,6 +84,14 @@ a:focus{
 #sidebar ul li a:hover{
 	background: #DFE0E1;
 }
+
+
+
+
+
+
+
+
 
 
 
