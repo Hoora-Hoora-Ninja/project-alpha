@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1200">
     <title>Welcome to AMBROS</title>
 
  <!-- Custom fonts for this template-->
@@ -30,7 +30,17 @@
 </head>
 <body>
  
-
+        <!-- nav top -->
+        <nav class="navbar d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
+            <a class="" href="#" id="sidebarCollapse">
+                <i class="fa fa-bars text-white" style="font-size:20px" aria-hidden="true"></i>
+            </a>     
+            <img src="/img/ambroswhite.png" height="30" alt="">
+            <a class="" href="#">
+                <i class="fas  fa-shopping-cart text-white" style="font-size:20px"></i>
+            </a>  
+        </nav>
+     <!-- nav top end -->
    
      <!-- side bar -->
      <div class="wrapper">
@@ -67,48 +77,236 @@
 
 
     <div id="content">
-
-        <!-- nav top -->
-        <nav class="navbar navbar-dark d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
-            <a class="" href="#" id="sidebarCollapse">
-                <i class="fa fa-bars text-white" style="font-size:20px" aria-hidden="true"></i>
-            </a>     
-            <label class="text-white" style="font-size:20px">AMBROS</label>
-            <a class="" href="#">
-                <i class="fas  fa-user text-white" style="font-size:20px"></i>
-            </a>  
-        </nav>
-     <!-- nav top end -->
-
-     <div class="container-fluid" style="min-height: 15vh; background-color: black;">
-               <div class="row align-items-center" style="min-height: 75vh;" >
+        
+        <!-- landing 1 -->
+     <div class="container-fluid my-5" style="min-height: 15vh;">
+               <div class="row align-items-center" style="min-height: 30vh;" >
                    <div class="col-6 text-white" style="padding-left: 10rem;">
                        <div><h1 class="font-weight-bolder">Welcome!</h1></div>
-                       <div><h2>Treat your belly with</h2></div>
-                       <div><h2>our Authentic and Premium</h2></div>
-                       <div><h2>dishes.</h2></div>
+                       <div><h2 style="font-size: 25px;">Treat your belly with</h2></div>
+                       <div><h2 style="font-size: 25px;">our Authentic and Premium</h2></div>
+                       <div><h2 style="font-size: 25px;">dishes.</h2></div>
                         <button class="btn mt-3 btn-success btnBook">Book a Table</button>
                    </div>
                    <div class="col-6 ">
-                    <div class="align-content-center">
-                        <img src="/img/foto1.png" width="600" />
-                    </div>3
+                        <img class="position-relative" src="/img/foto1.png" width="600" style="left:-100px" />
                    </div>
                </div>
     </div>
-    <div class="container-fluid" style="height: 75vh; background-color: rgb(36, 36, 36);">
+<!-- landing 1 done -->
+
+<!-- landing 2  -->
+    <div class="container-fluid my-5" style="min-height: 75vh;">
+            <div class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
+                <h1 class="text-white" style="font-weight: bolder;">
+                    Ambros Restaurant
+                </h1>
+                <h3 class="text-white">
+                    Treat your belly with our Authentic and Premium dishes.
+                </h3>
+            </div>
+            <div class="row mx-auto" style="width: 80%;">
+                <div class="col d-flex">
+                    <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
+                    border-style: solid;border-width: 5px;border-color:purple;
+                    ">
+                        <div class="mx-auto pt-5">
+                            <img class="" src="/img/iconmenu.png" width="150" height="150" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-white text-center" style="font-size: 17px; height: 150px;" >
+                          <h5 class="card-title">Category</h5>
+                          <div class="card-text">Want to order?</div>
+                          <div class="card-text">Want to see the menu?</div>
+                          <div class="card-text mb-2">Click the menu down below!</div>
+                        </div>
+                        <div class="mx-auto">
+                            <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;">Book a Table</button>
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
+                    border-style: solid;border-width: 5px;border-color:purple;
+                    ">
+                        <div class="mx-auto pt-5">
+                            <img class="" src="/img/about.png" width="150" height="150" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
+                          <h5 class="card-title">About Us</h5>
+                          <div class="card-text mb-2">Let's see our team!</div>
+                        </div>
+                        <div class="mx-auto">
+                            <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">About Us</button>
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
+                    border-style: solid;border-width: 5px;border-color:purple;
+                    ">
+                        <div class="mx-auto pt-5">
+                            <img class="" src="/img/user.png" width="150" height="150" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
+                          <h5 class="card-title">Sign Up</h5>
+                          <div class="card-text">Don't have an account?</div>
+                          <div class="card-text mb-2">Sign up here!</div>
+                        </div>
+                        <div class="mx-auto">
+                            <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">Sign Up</button>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+    </div>
+<!-- landing 2 done -->
+
+<!-- landing 3 -->
+    <div class="container-fluid my-5" style="min-height: 75vh;">
+        <div class="row d-flex justify-content-center" style="padding-top: 75px; padding-bottom: 100px;">
+            <div class="col-3 text-right">
+                <h4 class="text-white" style="font-size: 40px;">
+                    Discover
+                </h4>
+                <h2 class="text-white" style="font-weight: bolder; font-size: 50px;">
+                    Our Menu
+                </h2>
+            </div>
+            <div class="col-3">
+                <span class="text-white" style="font-size: 20px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, odit?
+    
+                </span>
+            </div>
             
-    </div>
-    <div class="container-fluid bg-white" style="height: 75vh;">
             
+        </div>
+
+
+        <div class="position-relative" style="top: -100px;">
+            <img src="/img/landing3menu.png" width="100%" height="100%" alt="">
+        </div>
+
+    </div>
+<!-- landing 3 done -->
+
+<!-- landing  4 -->
+<div class="container-fluid my-5" style="min-height: 75vh;">
+    <div class="w-50 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
+        <h2 class="text-white">
+            Discover
+        </h2>
+        <h1 class="text-white" style="font-weight: bolder;">
+            The Best Ingridients
+        </h1>
+        <h3 class="text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing eli
+            t. Fugiat at quaerat voluptates quisquam repudiandae sit totam inventore harum, deserunt mollitia!
+        </h3>
     </div>
 
+    <div class="position-relative w-75 mx-auto my-5" style="top: -100px;">
+        <img src="/img/daging.png" width="100%" height="100%" alt="">
+    </div>
+</div>
+<!-- landing 4 done -->
 
+
+<!-- landing 5 -->
+<div class="container-fluid my-5 px-0 mx-0" style="min-height: 75vh;">
+    <div class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
+
+        <h1 class="text-white" style="font-weight: bolder;">
+            Ambros Restaurant
+        </h1>
+        <h3 class="text-white">
+            Treat your belly with our Authentic and Premium dishes
+        </h3>
     </div>
 
-
-
+    <div class="position-relative mx-auto my-5 d-flex flex-column align-content-center justify-content-center" style="top: -100px; min-height: 60vh; background-image: url(/img/restaurant.jpg);background-size: cover; background-repeat: no-repeat;">
+     <div class="content-isi text-white mx-auto text-center">
+        <h2>Reservation</h2>
+        <h1 style="font-weight: bolder;">Book Your Table</h1>
+        <button class="btn mt-3 btn-success btnBook">Book a Table</button>
      </div>
+    </div>
+</div>
+
+<!-- landing 5 done -->
+
+
+
+
+<footer>
+    <div class="footer-content">
+        <div class="row text-white w-75 mx-auto" >
+            <div class="col">
+                <p style="font-size: 15px; font-weight: bolder;">Follow Us</p>
+                <br>
+                <p style="font-size: 15px; font-weight: bolder;">Ambros Restaurant</p>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Find a Restaurant</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Order Status</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Shopping Help</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Improve Us</p></a>
+                <br><br>
+                <p style="font-size: 15px; font-weight: bolder;">Frequently Asked Question</p>
+            </div>
+            <div class="col">
+                <p style="font-size: 15px; font-weight: bolder;">Term and Condition</p>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Delivery</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Booking Seats</p></a>
+                <br>
+                <p style="font-size: 15px; font-weight: bolder;">Change Theme</p>
+                
+            </div>
+            <div class="col">
+               <p style="font-size: 15px; font-weight: bolder;">Career</p>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Ambros and Business</p></a>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Partnership</p></a>
+               <br>
+               <p style="font-size: 15px; font-weight: bolder;">Want Invest?</p>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Job Opportunities</p></a>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Investors</p></a>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Events</p></a>
+                
+
+            </div>
+            <div class="col">
+                <p style="font-size: 15px; font-weight: bolder;">Account</p>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Create New Account</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Manage Your Account</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Forgot Password</p></a>
+            </div>
+        </div>
+
+        <div>
+            <div class="isi footer text-white w-75 mx-auto" style="padding-top:100px;">
+                More way to shop: Find a <span style="color:rgb(189, 27, 189)">Restaurant near you</span>. Or call 021-5555-6679
+                <p class="border-bottom"></p>   
+                Copyright 2022 Ambors. All right served. Privacy Policy    | Terms of use     | Site Map   Indonesia
+                
+    
+            </div>
+        </div>
+        
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- content end -->
+    </div> 
+
+
+<!-- wrapper end -->
+</div>
 
 
      
@@ -116,7 +314,7 @@
      
 
 
-     <!-- sidebar end-->
+
 
 
 
