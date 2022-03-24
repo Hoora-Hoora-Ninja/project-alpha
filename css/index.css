@@ -24,12 +24,16 @@ transition: all 0.3s;
 }
 
 
+/* ----------------SIDEBAR--------------------- */
+
 #sidebar{
     min-width: 320px;
     max-width: 320px;
     background: #fff;
     color: rgb(0, 0, 0);
     transition: all 0.3s;
+	position: absolute;
+	z-index: 2;
 }
 
 a,
@@ -63,8 +67,9 @@ a:focus{
 
 
 #sidebar .sidebar-header{
-	padding: 8px 20px;
-	background: #fff;
+	padding: 0 20px;
+	padding-top: 8px;
+	padding-bottom: 15px;
     
 }
 
@@ -85,9 +90,7 @@ a:focus{
 	background: #DFE0E1;
 }
 
-
-
-
+/* --------------X---------SIDEBAR--------X---------------- */
 
 
 

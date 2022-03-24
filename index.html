@@ -29,6 +29,38 @@
 
 </head>
 <body  id="scrollUp">
+
+    <nav id="sidebar" class="hidden">
+ 	
+        <div class="sidebar-header border-bottom text-center">
+            <img src="/img/ambrosblack.png" class="text-black-50" height="30" alt="">
+        </div>
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-home pr-2"></i>
+                    Home</a>
+            </li>	
+            <li>
+                <a href="/menu.html">
+                        <i class="fas fa-pizza-slice pr-2"></i>
+                        Menu</a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-solid fa-user pr-2"></i>
+                    Admin</a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-info-circle pr-2"></i>
+                    About</a>
+            </li>
+  
+        </ul>
+   </nav>
+
+
  
         <!-- nav top -->
         <nav class="navbar fixed-top d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
@@ -44,37 +76,6 @@
    
      <!-- side bar -->
      <div class="wrapper">
-        <nav id="sidebar" class="hidden">
- 	
-            <div class="sidebar-header border-bottom text-center">
-                <h5>AMBROS </h5>
-            </div>
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#">
-                        <i class="fas fa-home pr-2"></i>
-                        Home</a>
-                </li>	
-                <li>
-                    <a href="#">
-                            <i class="fas fa-pizza-slice pr-2"></i>
-                            Menu</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-solid fa-user pr-2"></i>
-                        Admin</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-info-circle pr-2"></i>
-                        About</a>
-                </li>
-      
-            </ul>
-       </nav>
-    
-
 
     <div id="content">
         
@@ -336,8 +337,6 @@ display: none;
 
 
 
-         <!-- Lottie Animation -->
-    <script src="~/potionLib/js/bodymovin.js"></script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
@@ -348,7 +347,7 @@ display: none;
 
     <script>
 
-AOS.init();
+        AOS.init();
         $(document).ready(function(){
     
             $("#sidebar").toggleClass('hides');
@@ -373,6 +372,7 @@ function topFunction() {
 }
 
 var mybutton = document.getElementById("myBtn");
+var bars = document.getElementById("bars");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -381,11 +381,19 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    if(bars.classList.contains("colorBars")){
+        bars.style.display = "none";
+    }else{
+        bars.style.display = "block";
+    }
+
   } else {
     mybutton.style.display = "none";
+        bars.style.display = "block";
+    
+    
   }
 }
-
 
     </script>
 
