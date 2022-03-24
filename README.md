@@ -1,5 +1,5 @@
 # project-alpha
 
-deploy: https://ambros-untar.herokuapp.com/
+deploy: https://ambros-web-dev.herokuapp.com/
 
 juara 1 gess
