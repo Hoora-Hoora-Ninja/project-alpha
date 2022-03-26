@@ -40,7 +40,7 @@ transition: all 0.3s;
     color: rgb(0, 0, 0);
     transition: all 0.3s;
 	position: absolute;
-	z-index: 2;
+	z-index: 10;
 }
 
 a,
@@ -124,6 +124,58 @@ a:focus{
 /* --------------X---------SIDEBAR--------X---------------- */
 
 
+
+/* ------------------chosen menu---------------- */
+.choosenMenu{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	min-width: 320px;
+	max-width: 320px;
+	min-height: 500px;
+	background-image: url(/img/lightthemeside.png);
+	background-size: 100%;
+}
+
+
+
+/* ------------------chosen menu---------------- */
+
+
+/* ------------------qr---------------- */
+.qrList{
+    min-width: 320px;
+    max-width: 320px;
+	min-height: 1000px;
+    background-image: url('/img/lightthemeside.png');
+	background-size: auto;
+    color: rgb(0, 0, 0);
+	transition: all 0.3s;
+	position: absolute;
+	top: 70px;
+	right: 0;
+	z-index: 10;
+	
+}
+
+
+.qrListToggle{
+ margin-right: -320px;
+}
+
+
+
+
+/* ------------------qr---------------- */
+
+
+.toggleChoosenMenu{
+	margin-bottom: -280px;
+}
+
+
+
 .removeButtonStyle{
     background: none;
 	color: inherit;
@@ -147,3 +199,54 @@ a:focus{
     font-size: 20px;
     text-align: center;
 }
+
+
+
+
+.btnBook {
+	  
+	background-color: #a4508b;
+	background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+	-webkit-appearance: none;
+	background: -webkit-gradient(to left, #db73d3 0%, #a4508b 50%, #5f0a87 100%);
+	background: linear-gradient(to left, #db73d3 0%, #a4508b 50%, #5f0a87 100%);
+	background-size: 500%;
+	border: none;
+	border-radius: 5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	color: #fff;
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0.05em;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 10px 20px;
+  }
+  
+  .btnBook:hover {
+	animation-name: gradient;
+	-webkit-animation-name: gradient;
+	animation-duration: 2s;
+	-webkit-animation-duration: s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+  }
+  
+  @keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	100% {
+	  background-position: 100%;
+	}
+  }
+
+
+

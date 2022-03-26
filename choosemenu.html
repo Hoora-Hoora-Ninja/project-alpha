@@ -35,6 +35,43 @@
 </head>
 <body  id="scrollUp">
 
+    <div class="qrList hidden">
+        <div class="card mt-2 mx-auto d-flex justify-content-center align-items-center rounded shadow" style="width: 18rem;">
+            <div class="w-100 pl-3 pt-4">
+              <h5 class="card-title">Wed, 27 April</h5>
+              <div class="row">
+                  <div class="col">
+                    <span>
+                        <img src="/img/clock.png" style="padding-right: 5px;" height="15" alt="">
+                        14.00 - 17.00
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span>
+                        <img src="/img/iconppl.png" style="padding-right: 5px;" height="15" alt="">
+                        2
+                    </span>
+                  </div>
+              </div>
+              <span class="badge badge-info my-2" style="font-size: 12px;">Upcoming</span>
+
+            </div>
+            <img class="pb-4" src="/img/qr.png" width="200" alt="Card image cap">
+          </div>
+        
+        </div>
+
+
+
+
+<div class="choosenMenu hidden">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta voluptate iste recusandae alias assumenda necessitatibus? Veniam consectetur tenetur libero accusamus minima provident quae. Dignissimos velit accusantium impedit nisi nesciunt! Ratione, omnis fuga! Provident suscipit repudiandae ipsa maxime reprehenderit facilis reiciendis quasi odio nam? Harum vitae numquam libero dolore debitis consequatur minima amet voluptatibus laborum similique molestiae nesciunt tenetur maxime, ad 
+
+</div>
+
+
+
+
 <!-- SIDEBAR -->
 <nav id="sidebar" class="hidden">
     
@@ -77,8 +114,8 @@
             <i class="fa fa-bars" id="bars" style="font-size:20px;" aria-hidden="true"></i>
         </a>     
         <img src="/img/ambroswhite.png" height="30" alt="">
-        <a class="" href="#">
-            <img src="/img/keranjang.png" height="30" alt="">
+        <a class="" href="#" id="keranjangCollapse">
+            <img src="/img/keranjang.png" id="keranjangImg" height="30" alt="">
         </a>  
     </nav>
     <!-- nav top end -->
@@ -93,24 +130,42 @@
         <div class="title text-white pb-2" style="border-bottom: 2px solid white;">
             <h2 style="font-weight: 900;">Choose Menu</h2>
         </div>
+        <div class="category">
+            <div class="row mx-auto" style="width: 80%;">
+                <div class="col">
+                    <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Appetizer</a>
+                </div>
+                <div class="col">
+                    <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Main Course</a>
+                </div>
+                <div class="col">
+                    <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Side Dish</a>
+                </div>
+                <div class="col">
+                    <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Dessert</a>
+                </div>
+            </div>
+        </div>
         <div class="text-white py-2 text-left align-middle">
-           <span style="font-size:30px; font-weight: 900;">Appetizer | </span>
+           <span style="font-size:30px; font-weight: 900;" id="Appetizer">Appetizer | </span>
            <span style="font-size:17px"> Small dishes before the main course that will make you more appetite!</span> 
         </div>
     </div>       
 
-    <div class="row">
+    <!-- appetizer 1 -->
+    <div class="row"> 
         <div class="col-4">
-            <img src="img/choosemenu1.png" width="100%" alt="">
+            <img src="img/appe1.png" width="100%" alt="">
         </div>
         <div class="col-8">
-            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Chicken Ballotine Chive Mash Chestnut Mushroom</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  60.000</div>
             <span class="text-white pt-2 box">
                 <button class="dec removeButtonStyle"> 
                     <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
                 </button>
                 <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
-                <input class="removeInputStyle" type="text" name="10000" id="1" value="0">
+                <input class="removeInputStyle" type="text" name="60000" id="1" value="0">
                 <button class="inc removeButtonStyle">
                     <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
                 </button>
@@ -118,18 +173,20 @@
         </div>
     </div>
 
+<!-- appetizer 2 -->
     <div class="row">
         <div class="col-4">
-            <img src="img/choosemenu1.png" width="100%" alt="">
+            <img src="img/appe2.png" width="100%" alt="">
         </div>
         <div class="col-8">
-            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Dietary Salad with Tomatoes, Mozarella Lettuce with Honey-Mustard Dressing</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  58.000</div>
             <span class="text-white pt-2 box">
                 <button class="dec removeButtonStyle"> 
                     <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
                 </button>
                 <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
-                <input class="removeInputStyle" type="text" name="15000" id="2" value="0">
+                <input class="removeInputStyle" type="text" name="58000" id="2" value="0">
                 <button class="inc removeButtonStyle">
                     <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
                 </button>
@@ -137,54 +194,93 @@
         </div>
     </div>
 
+    <!-- appetizer 3  -->
     <div class="row">
         <div class="col-4">
-            <img src="img/choosemenu1.png" width="100%" alt="">
+            <img src="img/appe3.png" width="100%" alt="">
         </div>
         <div class="col-8">
-            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Banana Fritters</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  53.000</div>
             <span class="text-white pt-2 box">
                 <button class="dec removeButtonStyle"> 
                     <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
                 </button>
                 <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
-                <input class="removeInputStyle" type="text" name="33333" id="2" value="0">
+                <input class="removeInputStyle" type="text" name="53000" id="3" value="0">
                 <button class="inc removeButtonStyle">
                     <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
                 </button>
             </span>
         </div>
     </div>
+
+    <!-- appetizer 4  -->
+    <div class="row">
+        <div class="col-4">
+            <img src="img/appe4.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Quiche Lorraine</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  49.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="49000" id="4" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <!-- appetizer 5  -->
+    <div class="row">
+        <div class="col-4">
+            <img src="img/appe5.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Chicken Liver Pate with Butter Sun Dried  Tomatoes Bread</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  54.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="54000" id="5" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
 
     <div class="text-white py-2 text-left align-middle">
         <span style="font-size:30px; font-weight: 900;">Appetizer | </span>
         <span style="font-size:17px"> Small dishes before the main course that will make you more appetite!</span> 
      </div>
 
-
-     <div class="row">
-        <div class="col-4">
-            <img src="img/choosemenu1.png" width="100%" alt="">
+    <div id="Order" class="d-flex flex-column float-right">
+        <div>
+            <label style="font-size: 25px; color: white; font-weight: 900;">Total Price &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: 500;">IDR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
+            <label id="cost" style="font-size: 25px; color: white;"></label>
         </div>
-        <div class="col-8">
-            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
-            <span class="text-white pt-2 box">
-                <button class="dec removeButtonStyle"> 
-                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
-                </button>
-                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
-                <input class="removeInputStyle" type="text" name="33333" id="2" value="0">
-                <button class="inc removeButtonStyle">
-                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
-                </button>
-            </span>
+        
+        <div class="align-items-end d-flex flex-column">
+            <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;" onclick="order()">Order</button>
         </div>
+        
     </div>
+    
+    <div class="text-white" id="orderData">asdasd</div>
 
-    <label id="cost" style="font-size: 50px; color: white;">cost</label>
     <script>
         var incrementButton =document.getElementsByClassName('inc');
         var decrementButton =document.getElementsByClassName('dec');
+        var existing = [];
         var totalharga = 0;
         for(var i = 0; i<incrementButton.length; i++){
             var button = incrementButton[i];
@@ -192,13 +288,46 @@
                 var buttonClicked = event.target;
 
                 var input = buttonClicked.parentElement.parentElement.children[1];
+                var inputName = buttonClicked.parentElement.parentElement.parentElement.children[0].innerHTML;
                 var inputValue  = input.value;
                 var harga = parseInt(input.name);
                 var newValue = parseInt(inputValue) + 1;
                 if(newValue <=10){
                     input.value = newValue;
                     totalharga = totalharga + harga;     
-                    document.getElementById("cost").innerHTML = totalharga;
+                    document.getElementById("cost").innerHTML = formatRupiah(parseInt(totalharga), ' Rp. ');
+                    window.localStorage.setItem('cost', totalharga);
+                    
+
+                    var item = {
+                            "name":inputName,
+                            "quantity":input.value,
+                            }
+                            var checkExist = false;
+                            if(existing.length == 0){
+                                console.log("first time");
+                                existing.push(item);
+                                checkExist = true;
+                            }else{
+                                for(var i = 0;i<existing.length;i++){
+                                    if(existing[i].name == inputName){
+                                        existing[i].quantity = newValue;
+                                        checkExist = true;
+                                        break;
+                                    }  
+                                }   
+
+                            }
+                            if(checkExist == false){
+                                existing.push(item);
+                            }
+                       
+                            console.log(existing);
+                           
+
+
+
+                    
                 }
             })
   
@@ -210,13 +339,49 @@
                 var buttonClicked = event.target;
 
                 var input = buttonClicked.parentElement.parentElement.children[1];
+                var inputName = buttonClicked.parentElement.parentElement.parentElement.children[0].innerHTML;
                 var inputValue  = input.value;
                 var harga = parseInt(input.name);
                 var newValue = parseInt(inputValue) - 1;
                 if(newValue >=0){
                     input.value = newValue;
                     totalharga = totalharga - harga;
-                    document.getElementById("cost").innerHTML = totalharga;
+                    document.getElementById("cost").innerHTML = formatRupiah(parseInt(totalharga));
+                    window.localStorage.setItem('cost', totalharga);
+
+
+                    
+                    var item = {
+                            "name":inputName,
+                            "quantity":input.value,
+                            }
+                            var checkExist = false;
+                            if(existing.length == 0){
+                                console.log("first time");
+                                existing.push(item);
+                                checkExist = true;
+                            }else{
+                                for(var i = 0;i<existing.length;i++){
+                                    if(existing[i].name == inputName){
+                                        existing[i].quantity = newValue;
+                                        checkExist = true;
+                                        if(existing[i].quantity == 0){
+                                        existing.splice(i,1);
+                                        break;
+                                         }  
+
+                                        break;
+                                    }  
+                                }   
+
+                            }
+                            if(checkExist == false){
+                                existing.push(item);
+                            }
+                       
+                            console.log(existing);
+
+
                 }
             })
         }
@@ -322,9 +487,14 @@
         AOS.init();
         $(document).ready(function(){
     
+        
+
+
             $("#sidebar").toggleClass('hides');
+            $(".qrList").toggleClass('qrListToggle');
 
             setTimeout(showSidebar,300);
+            setTimeout($(".qrList").removeClass("hidden"),300);
 
                 $("#sidebarCollapse").on('click', function(){ 
                     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -332,22 +502,59 @@
                         $("#sidebar").removeClass('hides'); 
                         $("#bars").toggleClass('colorBars'); 
                     }else{
-                        console.log("top");
                         $("#sidebar").toggleClass('hides'); 
                         $("#bars").toggleClass('colorBars'); 
                     }
                        
                 })
 
+               
+               
+                $("#keranjangCollapse").on('click', function(){ 
+                   
+                        $(".qrList").toggleClass('qrListToggle'); 
+                        console.log("tes");
 
-            
+                       
+                })
 
             
         })
         
+        function order(){
+            if(document.getElementById('cost').innerHTML == ""){
+                alert("Pick atleast 1 menu!");
+            }else{
+                location.href = '/menu.html';
+            }
+
+        }
+
+
+
+
+
+
         function showSidebar() {
             $("#sidebar").removeClass("hidden");
         }
+
+        function formatRupiah(angka){
+            split   		= angka.toString().split(','),
+            sisa     		= split[0].length % 3,
+            rupiah     		= split[0].substr(0, sisa),
+            ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+        
+            // tambahkan titik jika yang di input sudah menjadi angka ribuan
+            if(ribuan){
+                separator = sisa ? '.' : '';
+                rupiah += separator + ribuan.join('.');
+            }
+        
+            rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+            return rupiah
+        }
+
 
         // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
