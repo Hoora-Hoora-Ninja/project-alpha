@@ -4,16 +4,21 @@ body{
 	background-image: url("/img/darktheme.png");
 	background-size: 100%;
 	background-repeat: repeat;
+    min-height: 500vh;
 	/* min-width: 1200px; */
 }
 
+
 h1{
+    color: white;
 	font-size: 50px;
 }
 h2{
+    color: white;
 	font-size: 40px;
 }
 h3{
+    color: white;
 	font-size: 20px;
 }
 
@@ -29,7 +34,7 @@ transition: all 0.3s;
 #sidebar{
     min-width: 320px;
     max-width: 320px;
-	height: 1500px;
+    height: 1500px;
     background-image: url(/img/lightthemeside.png);
 	background-size: auto;
     color: rgb(0, 0, 0);
@@ -119,53 +124,26 @@ a:focus{
 /* --------------X---------SIDEBAR--------X---------------- */
 
 
-
-
-
-
-
-
-  .btnBook {
-	  
-	background-color: #a4508b;
-	background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
-	-webkit-appearance: none;
-	background: -webkit-gradient(to left, #db73d3 0%, #a4508b 50%, #5f0a87 100%);
-	background: linear-gradient(to left, #db73d3 0%, #a4508b 50%, #5f0a87 100%);
-	background-size: 500%;
+.removeButtonStyle{
+    background: none;
+	color: inherit;
 	border: none;
-	border-radius: 5rem;
-	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-	color: #fff;
+	padding: 0;
+	font: inherit;
 	cursor: pointer;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	letter-spacing: 0.05em;
-	outline: none;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	padding: 10px 20px;
-  }
-  
-  .btnBook:hover {
-	animation-name: gradient;
-	-webkit-animation-name: gradient;
-	animation-duration: 2s;
-	-webkit-animation-duration: s;
-	animation-iteration-count: 1;
-	-webkit-animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-  }
-  
-  @keyframes gradient {
-	0% {
-	  background-position: 0% 50%;
-	}
-	100% {
-	  background-position: 100%;
-	}
-  }
+	outline: inherit;
+}
+
+.removeInputStyle{
+    background: none;
+    width: 50px;
+	color: inherit;
+	border: none;
+	padding: 0;
+    margin: 0 20px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 20px;
+    text-align: center;
+}

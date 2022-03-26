@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=1200">
-    <title>Welcome to AMBROS</title>
+    <title>Choose Menu</title>
     <link rel = "icon" href = "img/iconmenu.png"  type = "image/x-icon">
 
  <!-- Custom fonts for this template-->
@@ -25,19 +25,22 @@
  <link href="/library/dist/css/select2.min.css" rel="stylesheet" />
  <script src="/library/dist/js/select2.min.js"></script>
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <link rel="stylesheet" href="/css/index.css"> 
+
+
+
+
+ <link rel="stylesheet" href="/css/choosemenu.css"> 
 
 
 </head>
 <body  id="scrollUp">
 
 <!-- SIDEBAR -->
+<nav id="sidebar" class="hidden">
+    
 <button onclick="topFunction()" id="myBtn" title="Go to top">
     <i class="fas fa-arrow-up text-white"></i>
     </button>
-
-
-<nav id="sidebar" class="hidden">
 
     <div class="sidebar-header border-bottom text-center">
         <img src="/img/ambrosblack.png" class="text-black-50" height="30" alt="">
@@ -80,170 +83,148 @@
     </nav>
     <!-- nav top end -->
    
+    
 <div class="wrapper">
-
     <div id="content">    
-<!-- landing 1 -->
-<div class="container-fluid my-5" style="min-height: 15vh;">
-            <div class="row align-items-center" style="min-height: 40vh;" >
-                <div data-aos="fade-up" class="col-6 text-white" style="padding-left: 10rem;">
-                    <div><h1 class="font-weight-bolder">Welcome!</h1></div>
-                    <div><h2 style="font-size: 25px;">Treat your belly with</h2></div>
-                    <div><h2 style="font-size: 25px;">our Authentic and Premium</h2></div>
-                    <div><h2 style="font-size: 25px;">dishes.</h2></div>
-                    <button class="btn mt-3 btn-success btnBook">Book a Table</button>
-                </div>
-                <div class="col-6 ">
-                    <img data-aos="fade-up" data-aos-duration="1000" class="position-relative" src="/img/foto1.png" width="600" style="left:-100px" />
-                </div>
-            </div>
-</div>
-<!-- landing 1 done -->
 
-        <!-- landing 2  -->
-        <div class="container-fluid my-5" style="min-height: 40vh;">
-                <div class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-                    <h1 class="text-white" style="font-weight: bolder;">
-                        Ambros Restaurant
-                    </h1>
-                    <h3 class="text-white">
-                        Treat your belly with our Authentic and Premium dishes.
-                    </h3>
-                </div>
-                <div class="row mx-auto" style="width: 80%;">
-                    <div data-aos="fade-up" class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/iconmenu.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 17px; height: 150px;" >
-                            <h5 class="card-title">Menu</h5>
-                            <div class="card-text">Want to see the menu?</div>
-                            <div class="card-text">Click the button</div>
-                            <div class="card-text mb-2">down below!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;">Choose Menu</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/about.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
-                            <h5 class="card-title">About Us</h5>
-                            <div class="card-text mb-2">Let's see our team!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">About Us</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="1500"  class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/user.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
-                            <h5 class="card-title">Reserve?</h5>
-                            <div class="card-text mb-2">Book a table now!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">Book</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
+<!-- landing 1  -->
+<div class="container-fluid my-5" style="min-height: 75vh; width: 80%;">
+    <div class="mx-auto text-center" style=" padding-top: 50px;">
+        <div class="title text-white pb-2" style="border-bottom: 2px solid white;">
+            <h2 style="font-weight: 900;">Choose Menu</h2>
         </div>
-        <!-- landing 2 done -->
-
-<!-- landing 3 -->
-<div class="container-fluid my-5" style="min-height: 75vh;">
-    <div data-aos="fade-up" class="row d-flex justify-content-center" style="padding-top: 75px; padding-bottom: 100px;">
-        <div  class="col-3 text-right">
-            <div class="text-white position-relative" style="font-size: 40px; top: -5px;">
-                Discover
-            </div>
-            <div class="text-white position-relative" style="font-weight: bolder; font-size: 50px; top:-30px">
-                Our Menu
-            </div>
+        <div class="text-white py-2 text-left align-middle">
+           <span style="font-size:30px; font-weight: 900;">Appetizer | </span>
+           <span style="font-size:17px"> Small dishes before the main course that will make you more appetite!</span> 
         </div>
-        <div class="col-3">
-            <span class="text-white" style="font-size: 20px;">
-                Ambros is a restaurant that will treat your belly with the Authentic and Premium dishes.
+    </div>       
 
+    <div class="row">
+        <div class="col-4">
+            <img src="img/choosemenu1.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="10000" id="1" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
             </span>
         </div>
-        
-        
     </div>
 
-
-    <div class="position-relative" style="top: -100px;">
-        <img data-aos="fade-up" data-aos-duration="1000" src="/img/landing3menu.png" width="100%" height="100%" alt="">
-    </div>
-
-</div>
-<!-- landing 3 done -->
-
-        <!-- landing  4 -->
-        <div class="container-fluid my-5" style="min-height: 50vh;">
-            <div data-aos="fade-up" class="w-50 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-                <h2 class="text-white">
-                    Discover
-                </h2>
-                <h1 class="text-white" style="font-weight: bolder;">
-                    The Best Ingridients
-                </h1>
-                <h3 class="text-white">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing eli
-                    t. Fugiat at quaerat voluptates quisquam repudiandae sit totam inventore harum, deserunt mollitia!
-                </h3>
-            </div>
-
-            <div class="position-relative w-75 mx-auto my-5" style="top: -100px;">
-                <img data-aos="fade-up" src="/img/daging.png" width="100%" height="100%" alt="">
-            </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/choosemenu1.png" width="100%" alt="">
         </div>
-        <!-- landing 4 done -->
-
-
-<!-- landing 5 -->
-<div class="container-fluid my-5 px-0 mx-0" style="min-height: 75vh;">
-    <div data-aos="fade-up" class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-
-        <h1 class="text-white" style="font-weight: bolder;">
-            Ambros Restaurant
-        </h1>
-        <h3 class="text-white">
-            Treat your belly with our Authentic and Premium dishes
-        </h3>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="15000" id="2" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
     </div>
 
-    <div class="position-relative mx-auto my-5 d-flex flex-column align-content-center justify-content-center" style="top: -100px; min-height: 55vh; background-image: url(/img/restaurant.jpg);background-size: cover; background-repeat: no-repeat;">
-     <div data-aos="fade-up" class="content-isi text-white mx-auto text-center position-relative">
-        <h2 style="font-size: 25px; font-weight: 900;">Reservation</h2>
-        <h1 style="font-weight: 900;">Book Your Table</h1>
-        <button class="btn mt-3 btn-success btnBook">Book a Table</button>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/choosemenu1.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="33333" id="2" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <div class="text-white py-2 text-left align-middle">
+        <span style="font-size:30px; font-weight: 900;">Appetizer | </span>
+        <span style="font-size:17px"> Small dishes before the main course that will make you more appetite!</span> 
      </div>
+
+
+     <div class="row">
+        <div class="col-4">
+            <img src="img/choosemenu1.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 30px; padding-bottom: 10px;">Chicken Liver Pate with Butter Sun Dried Tomatoes Bread</h3>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="33333" id="2" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
     </div>
+
+    <label id="cost" style="font-size: 50px; color: white;">cost</label>
+    <script>
+        var incrementButton =document.getElementsByClassName('inc');
+        var decrementButton =document.getElementsByClassName('dec');
+        var totalharga = 0;
+        for(var i = 0; i<incrementButton.length; i++){
+            var button = incrementButton[i];
+            button.addEventListener('click',function(event){
+                var buttonClicked = event.target;
+
+                var input = buttonClicked.parentElement.parentElement.children[1];
+                var inputValue  = input.value;
+                var harga = parseInt(input.name);
+                var newValue = parseInt(inputValue) + 1;
+                if(newValue <=10){
+                    input.value = newValue;
+                    totalharga = totalharga + harga;     
+                    document.getElementById("cost").innerHTML = totalharga;
+                }
+            })
+  
+        }
+
+        for(var i = 0; i<decrementButton.length; i++){
+            var button = decrementButton[i];
+            button.addEventListener('click',function(event){
+                var buttonClicked = event.target;
+
+                var input = buttonClicked.parentElement.parentElement.children[1];
+                var inputValue  = input.value;
+                var harga = parseInt(input.name);
+                var newValue = parseInt(inputValue) - 1;
+                if(newValue >=0){
+                    input.value = newValue;
+                    totalharga = totalharga - harga;
+                    document.getElementById("cost").innerHTML = totalharga;
+                }
+            })
+        }
+    </script>
+
+
 </div>
-<!-- landing 5 done -->
-
-
-
-
+<!-- landing 1 done -->
 
 
 
@@ -338,7 +319,7 @@
 
     <script>
 
-AOS.init();
+        AOS.init();
         $(document).ready(function(){
     
             $("#sidebar").toggleClass('hides');
@@ -394,7 +375,6 @@ function scrollFunction() {
     
   }
 }
-
 
     </script>
 
