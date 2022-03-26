@@ -1,8 +1,8 @@
 body{
 	font-family: 'Poppins';
 	overflow-x: hidden;
-	background-image: url("/img/darktheme.png");
-	background-size: 100%;
+	background-image: url("/img/menu Background.png");
+	background-size: auto 100%; 
 	background-repeat: repeat;
 	/* min-width: 1200px; */
 }
@@ -29,7 +29,7 @@ transition: all 0.3s;
 #sidebar{
     min-width: 320px;
     max-width: 320px;
-	height: 1500px;
+	height: 100%;
     background-image: url(/img/lightthemeside.png);
 	background-size: auto;
     color: rgb(0, 0, 0);
