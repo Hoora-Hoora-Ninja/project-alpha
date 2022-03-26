@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1200">
+    <title>Thank You For Booking</title>
+    <link rel = "icon" href = "img/iconmenu.png"  type = "image/x-icon">
+
+ <!-- Custom fonts for this template-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- Custom styles for this template-->
+ <link href="/potionLib/css/potion-bs.css" rel="stylesheet">
+ <link href="/potionLib/css/potion-custom.css" rel="stylesheet">
+
+ <!-- Bootstrap core JavaScript-->
+ <script src="/potionLib/vendor/jquery/jquery.min.js"></script>
+ <script src="/potionLib/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Core plugin JavaScript-->
+ <script src="/potionLib/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+ <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+ <link href="/library/dist/css/select2.min.css" rel="stylesheet" />
+ <script src="/library/dist/js/select2.min.js"></script>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="/css/qrcode.css"> 
+
+
+</head>
+<body  id="scrollUp">
+
+<!-- SIDEBAR -->
+<nav id="sidebar" class="hidden">
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up text-white"></i>
+        </button>
+    
+        <div class="sidebar-header border-bottom text-center">
+            <img src="/img/ambrosblack.png" class="text-black-50" height="30" alt="">
+        </div>
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="/index.html">
+                    <img src="/img/homelogo.png" style="padding-right: 7px;" height="20" alt="">
+                    Home</a>
+            </li>	
+            <li>
+                <a href="/menu.html">
+                    <img src="/img/menulogo.png" style="padding-right: 7px;" height="20" alt="">
+                        Menu</a>
+            </li>
+            <li>
+                <a href="/aboutus.html">
+                    <img src="/img/aboutlogo.png" style="padding-right: 7px;" height="20" alt="">
+                    About Us</a>
+            </li>
+            <li>
+                <a href="/choosemenu.html">
+                    <img src="/img/tablelogo.png" style="padding-right: 7px;" height="20" alt="">
+                    Book a Table</a>
+            </li>
+    
+        </ul>
+    </nav>
+    <!-- SIDEBAR END -->
+    
+        <!-- nav top -->
+        <nav class="navbar fixed-top d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
+            <a class="" href="#" id="sidebarCollapse">
+                <i class="fa fa-bars" id="bars" style="font-size:20px;" aria-hidden="true"></i>
+            </a>     
+            <img src="/img/ambroswhite.png" height="30" alt="">
+            <a class="" href="#">
+                <img src="/img/keranjang.png" height="30" alt="">
+            </a>  
+        </nav>
+        <!-- nav top end -->
+   
+<div class="wrapper">
+
+    <div id="content">    
+<!-- QR code -->
+<div class="container-fluid my-5" style="min-height: 15vh;">
+    <div class="mx-auto text-center" style=" padding-top: 50px;">
+        <div class="title text-white pb-2" style="margin-bottom: 20px;">
+            <h2 style="font-weight: 1000;">Thankyou for Booking!</h2>
+        </div>
+            <img src="/img/qr-code.png" height="350px" alt="">
+        <div class="title text-white pb-2" style="margin-top: 15px;">
+            <a href="#" id="randomID" onclick="randomBookingID()" style="width:150px;">Show Booking ID</a>
+            <h3 style="font-weight: 500; margin-top: 25px;">This is your QR Code and Booking ID. You can scan it to the cashier</h3>
+            <h3 style="font-weight: 500;">if you already at the Ambros Restaurant. See you there!</h3>
+        </div>
+        <a href="/index.html" style="color: #e131e4 ; font-weight: 400; font-size: 15px;">Back to Home</a>
+    </div>
+</div>
+<!-- QR code done -->
+
+<!-- ----- FOOTER--- -- -->
+<footer>
+    <div class="footer-content">
+        <div class="row text-white w-75 mx-auto" >
+            <div class="col">
+                <p style="font-size: 15px; font-weight: bolder;">Follow Us</p>
+                <a href="#"><img src="/img/sosmed.png" height="24" style="position: relative; top: -5px;"></a>
+                <p style="font-size: 15px; font-weight: bolder;">Ambros Restaurant</p>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Find a Restaurant</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Order Status</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Shopping Help</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Improve Us</p></a>
+                <br><br>
+                <p style="font-size: 15px; font-weight: bolder;">Frequently Asked Question</p>
+            </div>
+            <div class="col">
+                <p style="font-size: 15px; font-weight: bolder;">Term and Condition</p>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Delivery</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Booking Seats</p></a>
+                <br>
+                <p style="font-size: 15px; font-weight: bolder;">Change Theme</p>
+                
+            </div>
+            <div class="col">
+               <p style="font-size: 15px; font-weight: bolder;">Career</p>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Ambros and Business</p></a>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Partnership</p></a>
+               <br>
+               <p style="font-size: 15px; font-weight: bolder;">Want Invest?</p>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Job Opportunities</p></a>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Investors</p></a>
+               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Events</p></a>
+                
+
+            </div>
+            <div class="col">
+                <p style="font-size: 15px; font-weight: bolder;">Account</p>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Create New Account</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Manage Your Account</p></a>
+                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Forgot Password</p></a>
+            </div>
+        </div>
+
+        <div>
+            <div class="isi footer text-white w-75 mx-auto" style="padding-top:100px;">
+                More way to shop: Find a <span style="color:rgb(189, 27, 189)">Restaurant near you</span>. Or call 021-5555-6679
+                <p class="border-bottom py-2"></p>   
+                Copyright 2022 Ambors. All right served. Privacy Policy    | Terms of use     | Site Map   Indonesia
+                <br><br>
+                <br>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+</footer>
+<!-- --- FOOTER DONE --- -->
+
+<!-- content end -->
+    </div> 
+
+
+<!-- wrapper end -->
+</div>
+
+
+     
+    
+     
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+
+        AOS.init();
+        $(document).ready(function(){
+    
+            $("#sidebar").toggleClass('hides');
+
+            setTimeout(showSidebar,300);
+
+            $("#sidebarCollapse").on('click', function(){
+                    $("#sidebar").toggleClass('hides'); 
+                    $("#bars").toggleClass('colorBars'); 
+            })
+        })
+        
+        function showSidebar() {
+            $("#sidebar").removeClass("hidden");
+        }
+
+        function randomBookingID() {
+            var random = Math.floor(Math.random()*10) * 5351920001;
+            document.getElementById("randomID").innerText = ("Booking ID : AMB"+random)
+        }
+
+    </script>
+
+</body>
+</html>
