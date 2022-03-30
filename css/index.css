@@ -2,18 +2,22 @@ body{
 	font-family: 'Poppins';
 	overflow-x: hidden;
 	background-image: url("/img/darktheme.png");
-	background-size:100%; 
-	background-repeat: repeat;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	/* min-width: 1200px; */
 }
 
+
 h1{
+    color: white;
 	font-size: 50px;
 }
 h2{
+    color: white;
 	font-size: 40px;
 }
 h3{
+    color: white;
 	font-size: 20px;
 }
 
@@ -29,13 +33,13 @@ transition: all 0.3s;
 #sidebar{
     min-width: 320px;
     max-width: 320px;
-	height: 100%;
+    height: 100%;
     background-image: url(/img/lightthemeside.png);
 	background-size: auto;
     color: rgb(0, 0, 0);
     transition: all 0.3s;
 	position: absolute;
-	z-index: 2;
+	z-index: 10;
 }
 
 a,
@@ -120,7 +124,59 @@ a:focus{
 
 
 
+/* ------------------qr---------------- */
+.qrList{
+    min-width: 320px;
+    max-width: 320px;
+	min-height: 1000px;
+    background-image: url('/img/lightthemeside.png');
+	background-size: auto;
+    color: rgb(0, 0, 0);
+	transition: all 0.3s;
+	position: absolute;
+	top: 70px;
+	right: 0;
+	z-index: 10;
+	
+}
 
+.qrListToggle{
+	display: none;
+}
+
+
+/* ------------------qr---------------- */
+
+
+.toggleChoosenMenu{
+	margin-bottom: -280px;
+}
+
+
+
+.removeButtonStyle{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.removeInputStyle{
+    background: none;
+    width: 50px;
+	color: inherit;
+	border: none;
+	padding: 0;
+    margin: 0 20px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 20px;
+    text-align: center;
+}
 
 
 
@@ -169,3 +225,6 @@ a:focus{
 	  background-position: 100%;
 	}
   }
+
+
+

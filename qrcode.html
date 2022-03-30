@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=1200">
-    <title>Thank You For Booking</title>
+    <title>Thank You for Booking</title>
     <link rel = "icon" href = "img/iconmenu.png"  type = "image/x-icon">
 
  <!-- Custom fonts for this template-->
@@ -26,60 +26,95 @@
  <script src="/library/dist/js/select2.min.js"></script>
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+
+
  <link rel="stylesheet" href="/css/qrcode.css"> 
 
 
 </head>
 <body  id="scrollUp">
 
+    <div class="qrList hidden">
+        
+        <div class="bookingEmpty mt-2 mx-auto" style="width: 18rem;">
+            <img class="w-100" src="/img/keranjang2.png" alt="Card image cap">
+            <div class="card-body mx-auto d-flex justify-content-between align-items-center flex-column">
+              <p class="card-text">You have not made any booking yet</p>
+              <a href="/booktable.html">
+                <button class="btn mt-3 btn-success btnBook px-5">Book a Table</button>
+              </a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+
+
+
+
+
+<div class="choosenMenu hidden">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta voluptate iste recusandae alias assumenda necessitatibus? Veniam consectetur tenetur libero accusamus minima provident quae. Dignissimos velit accusantium impedit nisi nesciunt! Ratione, omnis fuga! Provident suscipit repudiandae ipsa maxime reprehenderit facilis reiciendis quasi odio nam? Harum vitae numquam libero dolore debitis consequatur minima amet voluptatibus laborum similique molestiae nesciunt tenetur maxime, ad 
+
+</div>
+
+
+
+
 <!-- SIDEBAR -->
 <nav id="sidebar" class="hidden">
     
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fas fa-arrow-up text-white"></i>
-        </button>
-    
-        <div class="sidebar-header border-bottom text-center">
-            <img src="/img/ambrosblack.png" class="text-black-50" height="30" alt="">
-        </div>
-        <ul class="list-unstyled components">
-            <li class="active">
-                <a href="/index.html">
-                    <img src="/img/homelogo.png" style="padding-right: 7px;" height="20" alt="">
-                    Home</a>
-            </li>	
-            <li>
-                <a href="/menu.html">
-                    <img src="/img/menulogo.png" style="padding-right: 7px;" height="20" alt="">
-                        Menu</a>
-            </li>
-            <li>
-                <a href="/aboutus.html">
-                    <img src="/img/aboutlogo.png" style="padding-right: 7px;" height="20" alt="">
-                    About Us</a>
-            </li>
-            <li>
-                <a href="/choosemenu.html">
-                    <img src="/img/tablelogo.png" style="padding-right: 7px;" height="20" alt="">
-                    Book a Table</a>
-            </li>
-    
-        </ul>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up text-white"></i>
+    </button>
+
+    <div class="sidebar-header border-bottom text-center">
+        <img src="/img/ambrosblack.png" class="text-black-50" height="30" alt="">
+    </div>
+    <ul class="list-unstyled components">
+        <li class="active">
+            <a href="/index.html">
+                <img src="/img/homelogo.png" style="padding-right: 7px;" height="20" alt="">
+                Home</a>
+        </li>	
+        <li>
+            <a href="/menu.html">
+                <img src="/img/menulogo.png" style="padding-right: 7px;" height="20" alt="">
+                    Menu</a>
+        </li>
+        <li>
+            <a href="/aboutus.html">
+                <img src="/img/aboutlogo.png" style="padding-right: 7px;" height="20" alt="">
+                About Us</a>
+        </li>
+        <li>
+            <a href="/booktable.html">
+                <img src="/img/tablelogo.png" style="padding-right: 7px;" height="20" alt="">
+                Book a Table</a>
+        </li>
+
+    </ul>
+</nav>
+<!-- SIDEBAR END -->
+
+    <!-- nav top -->
+    <nav class="navbar fixed-top d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
+        <a class="" href="#" id="sidebarCollapse">
+            <i class="fa fa-bars" id="bars" style="font-size:20px;" aria-hidden="true"></i>
+        </a>     
+        <img src="/img/ambroswhite.png" height="30" alt="">
+        <a class="" href="#" id="keranjangCollapse">
+            <img src="/img/task.png" id="keranjangImg" height="30" alt="">
+        </a>  
     </nav>
-    <!-- SIDEBAR END -->
-    
-        <!-- nav top -->
-        <nav class="navbar fixed-top d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
-            <a class="" href="#" id="sidebarCollapse">
-                <i class="fa fa-bars" id="bars" style="font-size:20px;" aria-hidden="true"></i>
-            </a>     
-            <img src="/img/ambroswhite.png" height="30" alt="">
-            <a class="" href="#">
-                <img src="/img/keranjang.png" height="30" alt="">
-            </a>  
-        </nav>
-        <!-- nav top end -->
+    <!-- nav top end -->
    
+  
+    
+     
 <div class="wrapper">
 
     <div id="content">    
@@ -168,15 +203,6 @@
 </div>
 
 
-     
-    
-     
-
-
-
-
-
-
 
 
 
@@ -192,24 +218,170 @@
         AOS.init();
         $(document).ready(function(){
     
+            var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+        console.log(existingEntries);
+        if(existingEntries == null){
+            console.log("not hidden");
+            $(".bookingEmpty").removeClass("hidden");
+        }else{
+            console.log("hidden");
+            $(".bookingEmpty").addClass("hidden");
+
+            existingEntries.forEach(e => {
+                const img = document.createElement("img");
+            img.className = "pb-4";
+            img.src = "/img/qr.png";
+            img.width = 200;
+            const div1 = document.createElement("div");
+            const h5 = document.createElement("h5");
+            h5.textContent = e.date;
+            h5.className ="card-title";
+
+            div1.className = "card my-2 mx-auto d-flex justify-content-center align-items-center rounded shadow ";
+            div1.style.width = "18rem";
+            const div2 = document.createElement("div");
+            div2.className = "w-100 pl-3 pt-4";
+            div2.appendChild(h5)
+            div1.appendChild(div2);
+            const div3 = document.createElement("div");
+            div3.className = "row";
+            div1.appendChild(div3);
+            const col1 = document.createElement("div");
+            col1.className = "col";
+            const span1 = document.createElement("span");
+            const icon1 = document.createElement("img");
+            icon1.src ="/img/clock.png";
+            icon1.style.paddingRight = 5;
+            icon1.height = 15;
+            icon1.className = "pl-1";
+            span1.textContent = e.time;
+            span1.appendChild(icon1);
+            col1.appendChild(span1);
+            const col2 = document.createElement("div");
+            col2.className = "col";
+            const span2 = document.createElement("span");
+            const icon2 = document.createElement("img");
+            icon2.src ="/img/iconppl.png";
+            icon2.style.paddingRight = 5;
+            icon2.height = 15;
+            icon2.className = "pl-1";
+            span2.textContent = e.person;
+            span2.appendChild(icon2);
+            col2.appendChild(span2);
+            div3.appendChild(col1);
+            div3.appendChild(col2);
+            div2.appendChild(div3);
+
+            const span3 = document.createElement("span");
+            span3.className = "badge badge-info my-2";
+            span3.style.fontSize = 12;
+            span3.textContent = "Upcoming";
+
+            div2.appendChild(span3);
+            div1.appendChild(img);
+
+            $(".qrList").append(div1);
+
+            });
+        }
+
+
+
             $("#sidebar").toggleClass('hides');
+            $(".qrList").toggleClass('qrListToggle');
 
             setTimeout(showSidebar,300);
+            setTimeout($(".qrList").removeClass("hidden"),300);
 
-            $("#sidebarCollapse").on('click', function(){
-                    $("#sidebar").toggleClass('hides'); 
-                    $("#bars").toggleClass('colorBars'); 
-            })
+                $("#sidebarCollapse").on('click', function(){ 
+                    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        console.log(">20");
+                        $("#sidebar").removeClass('hides'); 
+                        $("#bars").toggleClass('colorBars'); 
+                    }else{
+                        $("#sidebar").toggleClass('hides'); 
+                        $("#bars").toggleClass('colorBars'); 
+                    }
+                       
+                })
+
+               
+               
+                $("#keranjangCollapse").on('click', function(){ 
+                   
+                        $(".qrList").toggleClass('qrListToggle'); 
+                        console.log("tes");
+
+                       
+                })
+
+            
         })
         
-        function showSidebar() {
-            $("#sidebar").removeClass("hidden");
+        function order(){
+            if(document.getElementById('cost').innerHTML == ""){
+                alert("Pick atleast 1 menu!");
+            }else{
+                location.href = '/menu.html';
+            }
+
         }
+
+
 
         function randomBookingID() {
             var random = Math.floor(Math.random()*10) * 5351920001;
             document.getElementById("randomID").innerText = ("Booking ID : AMB"+random)
         }
+
+
+        function showSidebar() {
+            $("#sidebar").removeClass("hidden");
+        }
+
+        function formatRupiah(angka){
+            split   		= angka.toString().split(','),
+            sisa     		= split[0].length % 3,
+            rupiah     		= split[0].substr(0, sisa),
+            ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+        
+            // tambahkan titik jika yang di input sudah menjadi angka ribuan
+            if(ribuan){
+                separator = sisa ? '.' : '';
+                rupiah += separator + ribuan.join('.');
+            }
+        
+            rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+            return rupiah
+        }
+
+
+        // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+}
+
+var mybutton = document.getElementById("myBtn");
+var bars = document.getElementById("bars");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    $("#sidebar").addClass('hides'); 
+    $("#sidebar").removeClass('active'); 
+    $("#bars").removeClass('colorBars'); 
+
+  } else {
+    mybutton.style.display = "none";
+    
+  }
+}
 
     </script>
 

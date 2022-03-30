@@ -30,6 +30,28 @@
 
 </head>
 <body  id="scrollUp">
+    
+    <div class="qrList hidden">
+        
+        <div class="bookingEmpty mt-2 mx-auto" style="width: 18rem;">
+            <img class="w-100" src="/img/keranjang2.png" alt="Card image cap">
+            <div class="card-body mx-auto d-flex justify-content-between align-items-center flex-column">
+              <p class="card-text">You have not made any booking yet</p>
+              <a href="/booktable.html">
+                  <a href="/booktable.html">
+                    <button class="btn mt-3 btn-success btnBook px-5">Book a Table</button>
+                  </a>
+                
+              </a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+
+
 
 <!-- SIDEBAR -->
 <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -59,7 +81,7 @@
                 About Us</a>
         </li>
         <li>
-            <a href="/choosemenu.html">
+            <a href="/booktable.html">
                 <img src="/img/tablelogo.png" style="padding-right: 7px;" height="20" alt="">
                 Book a Table</a>
         </li>
@@ -74,8 +96,8 @@
             <i class="fa fa-bars" id="bars" style="font-size:20px;" aria-hidden="true"></i>
         </a>     
         <img src="/img/ambroswhite.png" height="30" alt="">
-        <a class="" href="#">
-            <img src="/img/keranjang.png" height="30" alt="">
+        <a class="" href="#" id="keranjangCollapse">
+            <img src="/img/task.png" height="30" alt="">
         </a>  
     </nav>
     <!-- nav top end -->
@@ -91,7 +113,10 @@
                     <div><h2 style="font-size: 25px;">Treat your belly with</h2></div>
                     <div><h2 style="font-size: 25px;">our Authentic and Premium</h2></div>
                     <div><h2 style="font-size: 25px;">dishes.</h2></div>
-                    <button class="btn mt-3 btn-success btnBook">Book a Table</button>
+                    <a href="booktable.html">
+                        <button class="btn mt-3 btn-success btnBook">Book a Table</button>
+                    </a>
+                   
                 </div>
                 <div class="col-6 ">
                     <img data-aos="fade-up" data-aos-duration="1000" class="position-relative" src="/img/foto1.png" width="600" style="left:-100px" />
@@ -125,7 +150,10 @@
                             <div class="card-text mb-2">down below!</div>
                             </div>
                             <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;">Choose Menu</button>
+                                <a href="menu.html">
+                                    <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;">See Menu</button>
+                                </a>
+                                
                             </div>
                             
                         </div>
@@ -142,7 +170,10 @@
                             <div class="card-text mb-2">Let's see our team!</div>
                             </div>
                             <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">About Us</button>
+                                <a href="/aboutus.html">
+                                    <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">About Us</button>
+                                </a>
+                                
                             </div>
                             
                         </div>
@@ -159,7 +190,10 @@
                             <div class="card-text mb-2">Book a table now!</div>
                             </div>
                             <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">Book</button>
+                                <a href="booktable.html">
+                                    <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">Book</button>
+                                </a>
+                                
                             </div>
                             
                         </div>
@@ -235,16 +269,14 @@
      <div data-aos="fade-up" class="content-isi text-white mx-auto text-center position-relative">
         <h2 style="font-size: 25px; font-weight: 900;">Reservation</h2>
         <h1 style="font-weight: 900;">Book Your Table</h1>
-        <button class="btn mt-3 btn-success btnBook">Book a Table</button>
+        <a href="booktable.html">
+            <button class="btn mt-3 btn-success btnBook">Book a Table</button>
+        </a>
+        
      </div>
     </div>
 </div>
 <!-- landing 5 done -->
-
-
-
-
-
 
 
 
@@ -340,10 +372,81 @@
 
 AOS.init();
         $(document).ready(function(){
-    
-            $("#sidebar").toggleClass('hides');
+
+
+            var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+        console.log(existingEntries);
+        if(existingEntries == null){
+            console.log("not hidden");
+            $(".bookingEmpty").removeClass("hidden");
+        }else{
+            console.log("hidden");
+            $(".bookingEmpty").addClass("hidden");
+
+            existingEntries.forEach(e => {
+                const img = document.createElement("img");
+            img.className = "pb-4";
+            img.src = "/img/qr.png";
+            img.width = 200;
+            const div1 = document.createElement("div");
+            const h5 = document.createElement("h5");
+            h5.textContent = e.date;
+            h5.className ="card-title";
+
+            div1.className = "card my-2 mx-auto d-flex justify-content-center align-items-center rounded shadow ";
+            div1.style.width = "18rem";
+            const div2 = document.createElement("div");
+            div2.className = "w-100 pl-3 pt-4";
+            div2.appendChild(h5)
+            div1.appendChild(div2);
+            const div3 = document.createElement("div");
+            div3.className = "row";
+            div1.appendChild(div3);
+            const col1 = document.createElement("div");
+            col1.className = "col";
+            const span1 = document.createElement("span");
+            const icon1 = document.createElement("img");
+            icon1.src ="/img/clock.png";
+            icon1.style.paddingRight = 5;
+            icon1.height = 15;
+            icon1.className = "pl-1";
+            span1.textContent = e.time;
+            span1.appendChild(icon1);
+            col1.appendChild(span1);
+            const col2 = document.createElement("div");
+            col2.className = "col";
+            const span2 = document.createElement("span");
+            const icon2 = document.createElement("img");
+            icon2.src ="/img/iconppl.png";
+            icon2.style.paddingRight = 5;
+            icon2.height = 15;
+            icon2.className = "pl-1";
+            span2.textContent = e.person;
+            span2.appendChild(icon2);
+            col2.appendChild(span2);
+            div3.appendChild(col1);
+            div3.appendChild(col2);
+            div2.appendChild(div3);
+
+            const span3 = document.createElement("span");
+            span3.className = "badge badge-info my-2";
+            span3.style.fontSize = 12;
+            span3.textContent = "Upcoming";
+
+            div2.appendChild(span3);
+            div1.appendChild(img);
+
+            $(".qrList").append(div1);
+
+            });
+        }
+
+        // toggle sidebar
+        $("#sidebar").toggleClass('hides');
+        $(".qrList").toggleClass('qrListToggle');
 
             setTimeout(showSidebar,300);
+            setTimeout($(".qrList").removeClass("hidden"),300);
 
                 $("#sidebarCollapse").on('click', function(){ 
                     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -351,16 +454,21 @@ AOS.init();
                         $("#sidebar").removeClass('hides'); 
                         $("#bars").toggleClass('colorBars'); 
                     }else{
-                        console.log("top");
                         $("#sidebar").toggleClass('hides'); 
                         $("#bars").toggleClass('colorBars'); 
                     }
                        
                 })
 
+               
+               
+                $("#keranjangCollapse").on('click', function(){ 
+                   
+                        $(".qrList").toggleClass('qrListToggle'); 
+                        console.log("tes");
 
-            
-
+                       
+                })
             
         })
         

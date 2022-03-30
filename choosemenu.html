@@ -36,30 +36,22 @@
 <body  id="scrollUp">
 
     <div class="qrList hidden">
-        <div class="card mt-2 mx-auto d-flex justify-content-center align-items-center rounded shadow" style="width: 18rem;">
-            <div class="w-100 pl-3 pt-4">
-              <h5 class="card-title">Wed, 27 April</h5>
-              <div class="row">
-                  <div class="col">
-                    <span>
-                        <img src="/img/clock.png" style="padding-right: 5px;" height="15" alt="">
-                        14.00 - 17.00
-                    </span>
-                  </div>
-                  <div class="col">
-                    <span>
-                        <img src="/img/iconppl.png" style="padding-right: 5px;" height="15" alt="">
-                        2
-                    </span>
-                  </div>
-              </div>
-              <span class="badge badge-info my-2" style="font-size: 12px;">Upcoming</span>
-
-            </div>
-            <img class="pb-4" src="/img/qr.png" width="200" alt="Card image cap">
-          </div>
         
+        <div class="bookingEmpty mt-2 mx-auto" style="width: 18rem;">
+            <img class="w-100" src="/img/keranjang2.png" alt="Card image cap">
+            <div class="card-body mx-auto d-flex justify-content-between align-items-center flex-column">
+              <p class="card-text">You have not made any booking yet</p>
+              <a href="/booktable.html">
+                <button class="btn mt-3 btn-success btnBook px-5">Book a Table</button>
+              </a>
+              
+            </div>
+          </div>
+
+          
+
         </div>
+
 
 
 
@@ -99,7 +91,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
                 About Us</a>
         </li>
         <li>
-            <a href="/choosemenu.html">
+            <a href="/booktable.html">
                 <img src="/img/tablelogo.png" style="padding-right: 7px;" height="20" alt="">
                 Book a Table</a>
         </li>
@@ -115,7 +107,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
         </a>     
         <img src="/img/ambroswhite.png" height="30" alt="">
         <a class="" href="#" id="keranjangCollapse">
-            <img src="/img/keranjang.png" id="keranjangImg" height="30" alt="">
+            <img src="/img/task.png" id="keranjangImg" height="30" alt="">
         </a>  
     </nav>
     <!-- nav top end -->
@@ -136,13 +128,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
                     <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Appetizer</a>
                 </div>
                 <div class="col">
-                    <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Main Course</a>
+                    <a href="#MainCourse" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Main Course</a>
                 </div>
                 <div class="col">
-                    <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Side Dish</a>
+                    <a href="#SideDish" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Side Dish</a>
                 </div>
                 <div class="col">
-                    <a href="#Appetizer" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Dessert</a>
+                    <a href="#Dessert" class="btn mt-3 btn-success btnBook mb-4 text-white" style="width:200px; font-size: 18px">Dessert</a>
                 </div>
             </div>
         </div>
@@ -259,9 +251,315 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
 
 
     <div class="text-white py-2 text-left align-middle">
-        <span style="font-size:30px; font-weight: 900;">Appetizer | </span>
-        <span style="font-size:17px"> Small dishes before the main course that will make you more appetite!</span> 
+        <span style="font-size:30px; font-weight: 900;" id="MainCourse">Main Course | </span>
+        <span style="font-size:17px"> Tantalise your taste buds with our wide variety of main course</span> 
      </div>
+
+     <div class="row">
+        <div class="col-4">
+            <img src="img/maindish1.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Spaghetti Bolognise</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  65.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="65000" id="6" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4">
+            <img src="img/maindish2.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Roast Beef Steak Japanese Cuisine</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  72.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="72000" id="7" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/maindish3.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Moules a la Mariniere</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  75.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="75000" id="8" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/maindish4.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Chicken Gordon Bleu</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  68.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="68000" id="9" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/maindish5.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Beed Bourguignon</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  80.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="80000" id="10" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+    
+    <div class="text-white py-2 text-left align-middle">
+        <span style="font-size:30px; font-weight: 900;" id="SideDish">Side Dish | </span>
+        <span style="font-size:17px"> Pick your favorite side dish to accompany your meal.</span> 
+     </div>
+
+     <div class="row">
+        <div class="col-4">
+            <img src="img/sidedish1.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Buttermilk Chicken Tenders</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  45.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="45000" id="11" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4">
+            <img src="img/sidedish2.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Italian Pinwheels</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  52.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="52000" id="12" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/sidedish3.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Tostones with Green Sauce</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  42.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="42000" id="13" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/sidedish4.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Traditional Bruschetta with Tomatoes and Basil</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  47.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="47000" id="14" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/sidedish5.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Zucchini Pizza Bites</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  45.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="45000" id="15" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <div class="text-white py-2 text-left align-middle">
+        <span style="font-size:30px; font-weight: 900;" id="Dessert">Dessert | </span>
+        <span style="font-size:17px"> Satiate your palate on take yourself on a cullinary treat with our sweet treats.</span> 
+     </div>
+
+     <div class="row">
+        <div class="col-4">
+            <img src="img/dessert1.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Banofee Pie Salted Caramel Cream Pie with Bananas and Whipped Cream</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  66.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="66000" id="16" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4">
+            <img src="img/dessert2.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Cottage Cheese Pancakes with Sour Cream and Fresh Berries</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  50.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="50000" id="17" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/dessert3.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Picarones with Fig Chancaca Syrup</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  42.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="42000" id="18" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/dessert4.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Sachertorte</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  35.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="35000" id="19" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/dessert5.png" width="100%" alt="">
+        </div>
+        <div class="col-8">
+            <h3 style="font-weight: 900; font-size: 25px; padding-top: 60px;">Whole Wheat-Oat Waffles</h3>
+            <div style="color: white; padding-bottom: 10px; font-size: 25px;">IDR  38.000</div>
+            <span class="text-white pt-2 box">
+                <button class="dec removeButtonStyle"> 
+                    <i class="fa-solid fa-circle-minus" style="font-size:25px"></i>
+                </button>
+                <!-- <span style="font-size: 25px; padding: 0 20px;">0</span> -->
+                <input class="removeInputStyle" type="text" name="38000" id="20" value="0">
+                <button class="inc removeButtonStyle">
+                    <i class="fa-solid fa-circle-plus" style="font-size:25px"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
 
     <div id="Order" class="d-flex flex-column float-right">
         <div>
@@ -275,7 +573,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
         
     </div>
     
-    <div class="text-white" id="orderData">asdasd</div>
+    <div class="text-white" id="orderData"></div>
 
     <script>
         var incrementButton =document.getElementsByClassName('inc');
@@ -486,8 +784,80 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
 
         AOS.init();
         $(document).ready(function(){
+
     
-        
+        if(localStorage.getItem("tempData") == null){
+            location.href = '/booktable.html';
+        }
+
+
+        var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+        console.log(existingEntries);
+        if(existingEntries == null){
+            console.log("not hidden");
+            $(".bookingEmpty").removeClass("hidden");
+        }else{
+            console.log("hidden");
+            $(".bookingEmpty").addClass("hidden");
+
+            existingEntries.forEach(e => {
+                const img = document.createElement("img");
+            img.className = "pb-4";
+            img.src = "/img/qr.png";
+            img.width = 200;
+            const div1 = document.createElement("div");
+            const h5 = document.createElement("h5");
+            h5.textContent = e.date;
+            h5.className ="card-title";
+
+            div1.className = "card my-2 mx-auto d-flex justify-content-center align-items-center rounded shadow ";
+            div1.style.width = "18rem";
+            const div2 = document.createElement("div");
+            div2.className = "w-100 pl-3 pt-4";
+            div2.appendChild(h5)
+            div1.appendChild(div2);
+            const div3 = document.createElement("div");
+            div3.className = "row";
+            div1.appendChild(div3);
+            const col1 = document.createElement("div");
+            col1.className = "col";
+            const span1 = document.createElement("span");
+            const icon1 = document.createElement("img");
+            icon1.src ="/img/clock.png";
+            icon1.style.paddingRight = 5;
+            icon1.height = 15;
+            icon1.className = "pl-1";
+            span1.textContent = e.time;
+            span1.appendChild(icon1);
+            col1.appendChild(span1);
+            const col2 = document.createElement("div");
+            col2.className = "col";
+            const span2 = document.createElement("span");
+            const icon2 = document.createElement("img");
+            icon2.src ="/img/iconppl.png";
+            icon2.style.paddingRight = 5;
+            icon2.height = 15;
+            icon2.className = "pl-1";
+            span2.textContent = e.person;
+            span2.appendChild(icon2);
+            col2.appendChild(span2);
+            div3.appendChild(col1);
+            div3.appendChild(col2);
+            div2.appendChild(div3);
+
+            const span3 = document.createElement("span");
+            span3.className = "badge badge-info my-2";
+            span3.style.fontSize = 12;
+            span3.textContent = "Upcoming";
+
+            div2.appendChild(span3);
+            div1.appendChild(img);
+
+            $(".qrList").append(div1);
+
+            });
+        }
+
 
 
             $("#sidebar").toggleClass('hides');
@@ -525,7 +895,26 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
             if(document.getElementById('cost').innerHTML == ""){
                 alert("Pick atleast 1 menu!");
             }else{
-                location.href = '/menu.html';
+                var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+                if(existingEntries == null) existingEntries = [];
+
+                var temp = JSON.parse(localStorage.getItem("tempData"));
+
+                var entry = {
+                    "date": temp.date,
+                    "time": temp.time,
+                    "person": temp.person,
+                    "name": temp.name,
+                    "phone": temp.phone
+                };
+                localStorage.setItem("entry", JSON.stringify(entry));
+                // Save allEntries back to local storage
+                existingEntries.push(entry);
+                localStorage.setItem("allEntries", JSON.stringify(existingEntries));
+
+                localStorage.removeItem("tempData");
+
+                location.href = '/qrcode.html';
             }
 
         }
@@ -587,3 +976,9 @@ function scrollFunction() {
 
 </body>
 </html>
+
+
+
+
+
+
