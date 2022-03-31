@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=1200">
-    <title>Thank You for Booking</title>
+    <title>About Ambros Restaurant</title>
     <link rel = "icon" href = "img/iconmenu.png"  type = "image/x-icon">
 
  <!-- Custom fonts for this template-->
@@ -48,19 +48,9 @@
             </div>
           </div>
 
-          
+
 
         </div>
-
-
-
-
-
-<div class="choosenMenu hidden">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta voluptate iste recusandae alias assumenda necessitatibus? Veniam consectetur tenetur libero accusamus minima provident quae. Dignissimos velit accusantium impedit nisi nesciunt! Ratione, omnis fuga! Provident suscipit repudiandae ipsa maxime reprehenderit facilis reiciendis quasi odio nam? Harum vitae numquam libero dolore debitis consequatur minima amet voluptatibus laborum similique molestiae nesciunt tenetur maxime, ad 
-
-</div>
-
 
 
 
@@ -113,27 +103,32 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
     <!-- nav top end -->
    
   
-    
-     
 <div class="wrapper">
 
     <div id="content">    
-<!-- QR code -->
+<!-- About Us -->
 <div class="container-fluid my-5" style="min-height: 15vh;">
     <div class="mx-auto text-center" style=" padding-top: 50px;">
-        <div class="title text-white pb-2" style="margin-bottom: 20px;">
-            <h2 style="font-weight: 1000;">Thankyou for Booking!</h2>
+        <div class="title text-white pb-2" style="margin-bottom: 150px;">
+            <h2 style="font-weight: bolder;">About Us</h2>
         </div>
-            <img src="/img/qr-code.png" height="350px" alt="">
-        <div class="title text-white pb-2" style="margin-top: 15px;">
-            <a href="#" id="randomID" onclick="randomBookingID()" style="width:150px;">Show Booking ID</a>
-            <h3 style="font-weight: 500; margin-top: 25px;">This is your QR Code and Booking ID. You can scan it to the cashier</h3>
-            <h3 style="font-weight: 500;">if you already at the Ambros Restaurant. See you there!</h3>
+        <div class="position-relative mx-auto my-5 d-flex flex-column align-content-center justify-content-center" style="top: -100px; min-height: 55vh; background-image: url(/img/restaurant.jpg);background-size: cover; background-repeat: no-repeat; opacity: 80%;">
+            <div class="content-isi text-white mx-auto text-center position-relative">
+               <h1 data-aos="fade-right" style="font-weight: 900;">Ambros Restaurant</h2>
+               <h3 data-aos="fade-up" style="font-weight: 900;">Ambros is a restaurant that cares about the comfort of its customers. <br>
+                Ambros was created because of a desire to create a restaurant in the era of a pandemic that limits its customers <br>
+                but still wants to provide an interesting experience so that customers feel satisfied when visiting restaurant.<br>
+                Ambros uses the concept of a future restaurant by using technology to help customers,<br>
+                for example, by ordering a table so that customers don't have to wait in long lines in front of the restaurant <br>
+                that can reduce the spread of disease in this pandemic era. <br>
+                Then reduce the interaction inside the restaurant, food orders can be made through the Ambros website <br>
+                by entering a phone number and other things to make sure the order is correct. <br>
+                Customers will get a QR code and a unique booking code. It is used for <br>
+                scanned in front of the restaurant so that the booking made is done immediately. </h3>
+            </div>
+           </div>
         </div>
-        <a href="/index.html" style="color: #e131e4 ; font-weight: 400; font-size: 15px;">Back to Home</a>
-    </div>
-</div>
-<!-- QR code done -->
+<!-- About Us done -->
 
 <!-- ----- FOOTER--- -- -->
 <footer>
@@ -202,6 +197,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
 <!-- wrapper end -->
 </div>
 
+     
+    
+     
+
+
+
+
+
 
 
 
@@ -218,7 +221,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
         AOS.init();
         $(document).ready(function(){
     
-            var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+        var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
         console.log(existingEntries);
         if(existingEntries == null){
             console.log("not hidden");
@@ -285,6 +288,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
             });
         }
 
+        
+
+
 
 
             $("#sidebar").toggleClass('hides');
@@ -308,7 +314,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
                
                
                 $("#keranjangCollapse").on('click', function(){ 
-                   
                         $(".qrList").toggleClass('qrListToggle'); 
                         console.log("tes");
 
@@ -317,51 +322,17 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis dicta volu
 
             
         })
-        
-        function order(){
-            if(document.getElementById('cost').innerHTML == ""){
-                alert("Pick atleast 1 menu!");
-            }else{
-                location.href = '/menu.html';
-            }
-
-        }
-
-
-
-        function randomBookingID() {
-            var random = Math.floor(Math.random()*10) * 5351920001;
-            document.getElementById("randomID").innerText = ("Booking ID : AMB"+random)
-        }
-
 
         function showSidebar() {
             $("#sidebar").removeClass("hidden");
         }
 
-        function formatRupiah(angka){
-            split   		= angka.toString().split(','),
-            sisa     		= split[0].length % 3,
-            rupiah     		= split[0].substr(0, sisa),
-            ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
-        
-            // tambahkan titik jika yang di input sudah menjadi angka ribuan
-            if(ribuan){
-                separator = sisa ? '.' : '';
-                rupiah += separator + ribuan.join('.');
-            }
-        
-            rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-            return rupiah
-        }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 
-
-        // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-
-}
+    }
 
 var mybutton = document.getElementById("myBtn");
 var bars = document.getElementById("bars");

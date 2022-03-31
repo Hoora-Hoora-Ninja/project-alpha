@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=1200">
-    <title>Welcome to AMBROS</title>
+    <title>Menu</title>
     <link rel = "icon" href = "img/iconmenu.png"  type = "image/x-icon">
 
  <!-- Custom fonts for this template-->
  <link href="/potionLib/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
  <!-- Custom styles for this template-->
  <link href="/potionLib/css/potion-bs.css" rel="stylesheet">
@@ -25,11 +26,31 @@
  <link href="/library/dist/css/select2.min.css" rel="stylesheet" />
  <script src="/library/dist/js/select2.min.js"></script>
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <link rel="stylesheet" href="/css/index.css"> 
+ <link rel="stylesheet" href="/css/menu.css"> 
 
 
 </head>
 <body  id="scrollUp">
+
+    <div class="qrList hidden">
+        
+        <div class="bookingEmpty mt-2 mx-auto" style="width: 18rem;">
+            <img class="w-100" src="/img/keranjang2.png" alt="Card image cap">
+            <div class="card-body mx-auto d-flex justify-content-between align-items-center flex-column">
+              <p class="card-text">You have not made any booking yet</p>
+              <a href="/booktable.html">
+                  <a href="/booktable.html">
+                    <button class="btn mt-3 btn-success btnBook px-5">Book a Table</button>
+                  </a>
+                
+              </a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
 
 <!-- SIDEBAR -->
 <nav id="sidebar" class="hidden">
@@ -69,8 +90,8 @@
             <i class="fa fa-bars" id="bars" style="font-size:20px;" aria-hidden="true"></i>
         </a>     
         <img src="/img/ambroswhite.png" height="30" alt="">
-        <a class="" href="#">
-            <i class="fas  fa-shopping-cart"  style="font-size:20px; color: white;"></i>
+        <a class="" href="#" id="keranjangCollapse">
+            <img src="/img/task.png" id="keranjangImg" height="30" alt="">
         </a>  
     </nav>
     <!-- nav top end -->
@@ -80,172 +101,138 @@
     <div id="content">    
 <!-- landing 1 -->
 <div class="container-fluid my-5" style="min-height: 25vh;">
-            <div class="row align-items-center" style="min-height: 40vh;" >
-                <div data-aos="fade-up" class="col-6 text-white" style="padding-left: 10rem;">
-                    <div><h1 class="font-weight-bolder">Welcome!</h1></div>
-                    <div><h2 style="font-size: 25px;">Treat your belly with</h2></div>
-                    <div><h2 style="font-size: 25px;">our Authentic and Premium</h2></div>
-                    <div><h2 style="font-size: 25px;">dishes.</h2></div>
-                    <button class="btn mt-3 btn-success btnBook">Book a Table</button>
+            <div class="row" style="min-height: 20vh;" >
+                <div class="col-9 text-white" style="margin-top: 75px; margin-left: 200px; ">
+                       <h1>Our Menu</h1>
+                       <hr color="white">
                 </div>
-                <div class="col-6 ">
-                    <img data-aos="fade-up" data-aos-duration="1000" class="position-relative" src="/img/foto1.png" width="600" style="left:-100px" />
+            </div>
+            <div class="category">
+                <div class="row mx-auto">
+                    <div class="col">
+                        <a href="#Appetizer" class="btn mt-2 btn-success btnBook mb-2 text-white" style="width:200px; font-size: 18px">Appetizer</a>
+                    </div>
+                    <div class="col">
+                        <a href="#MainCourse" class="btn mt-2 btn-success btnBook mb-2 text-white" style="width:200px; font-size: 18px">Main Course</a>
+                    </div>
+                    <div class="col">
+                        <a href="#SideDish" class="btn mt-2 btn-success btnBook mb-2 text-white" style="width:200px; font-size: 18px">Side Dish</a>
+                    </div>
+                    <div class="col">
+                        <a href="#Dessert" class="btn mt-2 btn-success btnBook mb-2 text-white" style="width:200px; font-size: 18px">Dessert</a>
+                    </div>
+                    <div class="col">
+                        <a href="#Beverage" class="btn mt-2 btn-success btnBook mb-2 text-white" style="width:200px; font-size: 18px">Beverage</a>
+                    </div>
                 </div>
+            </div>
+            <div class="row" style="min-height: 30vh;" >
+                <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px;" id="Appetizer">
+                    <h1>Appetizer</h1>
+                    <h3>Small dishes before the main course that will make you more appetite!</h3>
+                    <hr color="white">
+             </div>
+            </div>
+            <div class="carousel"
+                data-flickity='{ "freeScroll": true }'>
+                <div class="carousel-cell"><img src="/img/appe1.png"/></div>
+                <div class="carousel-text"><h3>Chicken Ballotine Chive Mash Chestnut Mushroom <br> IDR  60.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/appe2.png"/></div>
+                <div class="carousel-text"><h3>Dietary Salad with Tomatoes, Mozarella Lettuce with Honey-Mustard Dressing <br> IDR  58.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/appe3.png"/></div>
+                <div class="carousel-text"><h3>Banana Fritters <br> IDR  53.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/appe4.png"/></div>
+                <div class="carousel-text"><h3>Quiche Lorraine <br> IDR  49.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/appe5.png"/></div>\
+                <div class="carousel-text"><h3>Chicken Liver Pate with Butter Sun Dried  Tomatoes Bread <br> IDR  54.000 <br> <<<<< </h3></div>
+            </div>
+            <div class="row" style="min-height: 30vh;" >
+                <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px;" id="MainCourse">
+                    <h1>Main Course</h1>
+                    <h3>Of course, this course is the most important to you! So, we have many great menus that made only for you!</h3>
+                    <hr color="white">
+             </div>
+            </div>
+            <div class="carousel"
+                data-flickity='{ "freeScroll": true }'>
+                <div class="carousel-cell"><img src="/img/maindish1.png"/></div>
+                <div class="carousel-text"><h3>Spaghetti Bolognise <br> IDR  65.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/maindish2.png"/></div>
+                <div class="carousel-text"><h3>Roast Beef Steak Japanese Cuisine <br> IDR  72.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/maindish3.png"/></div>
+                <div class="carousel-text"><h3>Moules a la Mariniere <br> IDR  75.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/maindish4.png"/></div>
+                <div class="carousel-text"><h3>Chicken Gordon Bleu <br> IDR  68.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/maindish5.png"/></div>
+                <div class="carousel-text"><h3>Beef Bourguignon <br> IDR  60.000 <br> <<<<< </h3></div>
+            </div>
+            <div class="row" style="min-height: 30vh;" id="SideDish">
+                <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px; ">
+                    <h1>Side dish</h1>
+                    <h3> After the main course, you definitely need side dish, right?</h3>
+                    <hr color="white">
+             </div>
+            </div>
+            <div class="carousel"
+                data-flickity='{ "freeScroll": true }'>
+                <div class="carousel-cell"><img src="/img/sidedish1.png"/></div>
+                <div class="carousel-text"><h3>Buttermilk Chicken Tenders <br> IDR  45.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/sidedish2.png"/></div>
+                <div class="carousel-text"><h3>Italian Pinwheels <br> IDR  52.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/sidedish3.png"/></div>
+                <div class="carousel-text"><h3>Tostones with Green Sauce <br> IDR  42.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/sidedish4.png"/></div>
+                <div class="carousel-text"><h3>Traditional Bruschetta with Tomatoes and Basil <br> IDR  47.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/sidedish5.png"/></div>
+                <div class="carousel-text"><h3>Zucchini Pizza Bites <br> IDR  45.000 <br> <<<<< </h3></div>
+            </div>
+            <div class="row" style="min-height: 30vh;" id="Dessert" >
+                <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px; ">
+                    <h1>Dessert</h1>
+                    <h3>Sweet course to end your meal!</h3>
+                    <hr color="white">
+             </div>
+            </div>
+            <div class="carousel"
+                data-flickity='{ "freeScroll": true }'>
+                <div class="carousel-cell"><img src="/img/dessert1.png"/></div>
+                <div class="carousel-text"><h3>Banofee Pie Salted Caramel Cream Pie with Bananas and Whipped Cream <br> IDR  66.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/dessert2.png"/></div>
+                <div class="carousel-text"><h3>Cottage Cheese Pancakes with Sour Cream and Fresh Berries <br> IDR  50.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/dessert3.png"/></div>
+                <div class="carousel-text"><h3>Picarones with Fig Chancaca Syrup <br> IDR  42.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/dessert4.png"/></div>
+                <div class="carousel-text"><h3>Sachertorte <br> IDR  35.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/dessert5.png"/></div>
+                <div class="carousel-text"><h3>Whole Wheat-Oat Waffles <br> IDR  38.000 <br> <<<<< </h3></div>
+            </div>
+            <div class="row" style="min-height: 30vh;" id="Beverage" >
+                <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px; ">
+                    <h1>Beverage</h1>
+                    <h3>After enjoying all your meals, let's try our sweet and fresh drink here to satisfy your thirst!</h3>
+                    <hr color="white">
+             </div>
+            </div>
+            <div class="carousel"
+                data-flickity='{ "freeScroll": true }'>
+                <div class="carousel-cell"><img src="/img/bev1.png"/></div>
+                <div class="carousel-text"><h3>Blended Ice Mocha <br> IDR  30.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/bev2.png"/></div>
+                <div class="carousel-text"><h3>Elderflower Mojito <br> IDR  28.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/bev3.png"/></div>
+                <div class="carousel-text"><h3>Kiwi Avocado Smoothie <br> IDR  35.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/bev4.png"/></div>
+                <div class="carousel-text"><h3>Skinny Strawberry and Coconut Frappe <br> IDR  35.000 <br> <<<<< </h3></div>
+                <div class="carousel-cell"><img src="/img/bev5.png"/></div>
+                <div class="carousel-text"><h3>Thai Milk Tea <br> IDR  25.000 <br> <<<<< </h3></div>
             </div>
 </div>
 <!-- landing 1 done -->
 
-        <!-- landing 2  -->
-        <div class="container-fluid my-5" style="min-height: 40vh;">
-                <div class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-                    <h1 class="text-white" style="font-weight: bolder;">
-                        Ambros Restaurant
-                    </h1>
-                    <h3 class="text-white">
-                        Treat your belly with our Authentic and Premium dishes.
-                    </h3>
-                </div>
-                <div class="row mx-auto" style="width: 80%;">
-                    <div data-aos="fade-up" class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/iconmenu.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 17px; height: 150px;" >
-                            <h5 class="card-title">Category</h5>
-                            <div class="card-text">Want to order?</div>
-                            <div class="card-text">Want to see the menu?</div>
-                            <div class="card-text mb-2">Click the menu down below!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;">Book a Table</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/about.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
-                            <h5 class="card-title">About Us</h5>
-                            <div class="card-text mb-2">Let's see our team!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">About Us</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="1500"  class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/user.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
-                            <h5 class="card-title">Sign Up</h5>
-                            <div class="card-text">Don't have an account?</div>
-                            <div class="card-text mb-2">Sign up here!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">Sign Up</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <!-- landing 2 done -->
-
-<!-- landing 3 -->
-<div class="container-fluid my-5" style="min-height: 75vh;">
-    <div data-aos="fade-up" class="row d-flex justify-content-center" style="padding-top: 75px; padding-bottom: 100px;">
-        <div  class="col-3 text-right">
-            <div class="text-white position-relative" style="font-size: 40px; top: -5px;">
-                Discover
-            </div>
-            <div class="text-white position-relative" style="font-weight: bolder; font-size: 50px; top:-30px">
-                Our Menu
-            </div>
-        </div>
-        <div class="col-3">
-            <span class="text-white" style="font-size: 20px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, odit?
-
-            </span>
-        </div>
-        
-        
-    </div>
-
-
-    <div class="position-relative" style="top: -100px;">
-        <img data-aos="fade-up" data-aos-duration="1000" src="/img/landing3menu.png" width="100%" height="100%" alt="">
-    </div>
-
-</div>
-<!-- landing 3 done -->
-
-        <!-- landing  4 -->
-        <div class="container-fluid my-5" style="min-height: 50vh;">
-            <div data-aos="fade-up" class="w-50 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-                <h2 class="text-white">
-                    Discover
-                </h2>
-                <h1 class="text-white" style="font-weight: bolder;">
-                    The Best Ingridients
-                </h1>
-                <h3 class="text-white">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing eli
-                    t. Fugiat at quaerat voluptates quisquam repudiandae sit totam inventore harum, deserunt mollitia!
-                </h3>
-            </div>
-
-            <div class="position-relative w-75 mx-auto my-5" style="top: -100px;">
-                <img data-aos="fade-up" src="/img/daging.png" width="100%" height="100%" alt="">
-            </div>
-        </div>
-        <!-- landing 4 done -->
-
-
-<!-- landing 5 -->
-<div class="container-fluid my-5 px-0 mx-0" style="min-height: 75vh;">
-    <div data-aos="fade-up" class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-
-        <h1 class="text-white" style="font-weight: bolder;">
-            Ambros Restaurant
-        </h1>
-        <h3 class="text-white">
-            Treat your belly with our Authentic and Premium dishes
-        </h3>
-    </div>
-
-    <div class="position-relative mx-auto my-5 d-flex flex-column align-content-center justify-content-center" style="top: -100px; min-height: 55vh; background-image: url(/img/restaurant.jpg);background-size: cover; background-repeat: no-repeat;">
-     <div data-aos="fade-up" class="content-isi text-white mx-auto text-center position-relative">
-        <h2 style="font-size: 25px; font-weight: 900;">Reservation</h2>
-        <h1 style="font-weight: 900;">Book Your Table</h1>
-        <button class="btn mt-3 btn-success btnBook">Book a Table</button>
-     </div>
-    </div>
-</div>
-<!-- landing 5 done -->
-
-
-
-
-
-
-
 <button onclick="topFunction()" id="myBtn" title="Go to top">
 <i class="fas fa-arrow-up text-white"></i>
 </button>
+
 <!-- ----- FOOTER--- -- -->
 <footer>
     <div class="footer-content">
@@ -293,7 +280,7 @@
             <div class="isi footer text-white w-75 mx-auto" style="padding-top:100px;">
                 More way to shop: Find a <span style="color:rgb(189, 27, 189)">Restaurant near you</span>. Or call 021-5555-6679
                 <p class="border-bottom py-2"></p>   
-                Copyright 2022 Ambors. All right served. Privacy Policy    | Terms of use     | Site Map   Indonesia
+                Copyright 2022 Ambros. All right served. Privacy Policy    | Terms of use     | Site Map   Indonesia
                 <br><br>
                 <br>
             </div>
@@ -332,26 +319,144 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
     <script>
 
-        AOS.init();
+AOS.init();
         $(document).ready(function(){
-    
-            $("#sidebar").toggleClass('hides');
+
+
+            var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+        console.log(existingEntries);
+        if(existingEntries == null){
+            console.log("not hidden");
+            $(".bookingEmpty").removeClass("hidden");
+        }else{
+            console.log("hidden");
+            $(".bookingEmpty").addClass("hidden");
+
+            existingEntries.forEach(e => {
+                const img = document.createElement("img");
+            img.className = "pb-4";
+            img.src = "/img/qr.png";
+            img.width = 200;
+            const div1 = document.createElement("div");
+            const h5 = document.createElement("h5");
+            h5.textContent = e.date;
+            h5.className ="card-title";
+
+            div1.className = "card my-2 mx-auto d-flex justify-content-center align-items-center rounded shadow ";
+            div1.style.width = "18rem";
+            const div2 = document.createElement("div");
+            div2.className = "w-100 pl-3 pt-4";
+            div2.appendChild(h5)
+            div1.appendChild(div2);
+            const div3 = document.createElement("div");
+            div3.className = "row";
+            div1.appendChild(div3);
+            const col1 = document.createElement("div");
+            col1.className = "col";
+            const span1 = document.createElement("span");
+            const icon1 = document.createElement("img");
+            icon1.src ="/img/clock.png";
+            icon1.style.paddingRight = 5;
+            icon1.height = 15;
+            icon1.className = "pl-1";
+            span1.textContent = e.time;
+            span1.appendChild(icon1);
+            col1.appendChild(span1);
+            const col2 = document.createElement("div");
+            col2.className = "col";
+            const span2 = document.createElement("span");
+            const icon2 = document.createElement("img");
+            icon2.src ="/img/iconppl.png";
+            icon2.style.paddingRight = 5;
+            icon2.height = 15;
+            icon2.className = "pl-1";
+            span2.textContent = e.person;
+            span2.appendChild(icon2);
+            col2.appendChild(span2);
+            div3.appendChild(col1);
+            div3.appendChild(col2);
+            div2.appendChild(div3);
+
+            const span3 = document.createElement("span");
+            span3.className = "badge badge-info my-2";
+            span3.style.fontSize = 12;
+            span3.textContent = "Upcoming";
+
+            div2.appendChild(span3);
+            div1.appendChild(img);
+
+            $(".qrList").append(div1);
+
+            });
+        }
+
+        // toggle sidebar
+        $("#sidebar").toggleClass('hides');
+        $(".qrList").toggleClass('qrListToggle');
 
             setTimeout(showSidebar,300);
+            setTimeout($(".qrList").removeClass("hidden"),300);
 
-            $("#sidebarCollapse").on('click', function(){
-                    $("#sidebar").toggleClass('hides'); 
-                    $("#bars").toggleClass('colorBars'); 
-            })
+                $("#sidebarCollapse").on('click', function(){ 
+                    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        console.log(">20");
+                        $("#sidebar").removeClass('hides'); 
+                        $("#bars").toggleClass('colorBars'); 
+                    }else{
+                        $("#sidebar").toggleClass('hides'); 
+                        $("#bars").toggleClass('colorBars'); 
+                    }
+                       
+                })
+
+               
+               
+                $("#keranjangCollapse").on('click', function(){ 
+                   
+                        $(".qrList").toggleClass('qrListToggle'); 
+                        console.log("tes");
+
+                       
+                })
+            
         })
         
         function showSidebar() {
             $("#sidebar").removeClass("hidden");
         }
+
+        // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+}
+
+var mybutton = document.getElementById("myBtn");
+var bars = document.getElementById("bars");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    $("#sidebar").addClass('hides'); 
+    $("#sidebar").removeClass('active'); 
+    $("#bars").removeClass('colorBars'); 
+
+  } else {
+    mybutton.style.display = "none";
+    
+  }
+}
+
 
     </script>
 
