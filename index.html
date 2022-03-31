@@ -31,36 +31,31 @@
 </head>
 <body  id="scrollUp">
     
-    <div class="qrList hidden">
-        
-        <div class="bookingEmpty mt-2 mx-auto" style="width: 18rem;">
-            <img class="w-100" src="/img/keranjang2.png" alt="Card image cap">
+<!-- Book Right Side Bar -->
+<div class="qrList hidden">
+    <div class="bookingEmpty mt-2 mx-auto" style="width: 18rem;">
+        <img class="w-100" src="/img/keranjang2.png" alt="Card image cap">
             <div class="card-body mx-auto d-flex justify-content-between align-items-center flex-column">
-              <p class="card-text">You have not made any booking yet</p>
-              <a href="/booktable.html">
-                  <a href="/booktable.html">
+                <p class="card-text">You have not made any booking yet</p>
+                <a href="/booktable.html">
                     <button class="btn mt-3 btn-success btnBook px-5">Book a Table</button>
-                  </a>
-                
-              </a>
-              
+                </a>
             </div>
-          </div>
+    </div>
+</div>
+<!-- Book Right Side Bar Done -->
 
-          
-
-        </div>
-
-
-
-<!-- SIDEBAR -->
+<!-- Button Up -->
 <button onclick="topFunction()" id="myBtn" title="Go to top">
     <i class="fas fa-arrow-up text-white"></i>
-    </button>
+</button>
+<!-- Button Up end -->
 
-<!-- tes -->
+<!-- SIDEBAR -->
 <nav id="sidebar" class="hidden">
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up text-white"></i>
+    </button>
     <div class="sidebar-header border-bottom text-center">
         <img src="/img/ambrosblack.png" class="text-black-50" height="30" alt="">
     </div>
@@ -68,12 +63,12 @@
         <li class="active">
             <a href="/index.html">
                 <img src="/img/homelogo.png" style="padding-right: 7px;" height="20" alt="">
-                Home</a>
+                Home</a>     
         </li>	
         <li>
             <a href="/menu.html">
                 <img src="/img/menulogo.png" style="padding-right: 7px;" height="20" alt="">
-                    Menu</a>
+                Menu</a>
         </li>
         <li>
             <a href="/aboutus.html">
@@ -85,28 +80,30 @@
                 <img src="/img/tablelogo.png" style="padding-right: 7px;" height="20" alt="">
                 Book a Table</a>
         </li>
-
     </ul>
 </nav>
-<!-- SIDEBAR END -->
+<!-- SIDEBAR DONE -->
 
-    <!-- nav top -->
+<!-- nav top -->
     <nav class="navbar fixed-top d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
         <a class="" href="#" id="sidebarCollapse">
             <i class="fa fa-bars" id="bars" style="font-size:20px;" aria-hidden="true"></i>
         </a>     
         <img src="/img/ambroswhite.png" height="30" alt="">
         <a class="" href="#" id="keranjangCollapse">
-            <img src="/img/task.png" height="30" alt="">
+            <img src="/img/task.png" id="keranjangImg" height="30" alt="">
         </a>  
     </nav>
-    <!-- nav top end -->
-   
+<!-- nav top end -->
+
+<!-- wrapper -->
 <div class="wrapper">
 
+<!-- content -->
     <div id="content">    
+
 <!-- landing 1 -->
-<div class="container-fluid my-5" style="min-height: 15vh;">
+        <div class="container-fluid my-5" style="min-height: 15vh;">
             <div class="row align-items-center" style="min-height: 40vh;" >
                 <div data-aos="fade-up" class="col-6 text-white" style="padding-left: 10rem;">
                     <div><h1 class="font-weight-bolder">Welcome!</h1></div>
@@ -122,116 +119,104 @@
                     <img data-aos="fade-up" data-aos-duration="1000" class="position-relative" src="/img/foto1.png" width="600" style="left:-100px" />
                 </div>
             </div>
-</div>
+        </div>
 <!-- landing 1 done -->
 
-        <!-- landing 2  -->
+<!-- landing 2  -->
         <div class="container-fluid my-5" style="min-height: 40vh;">
-                <div class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-                    <h1 class="text-white" style="font-weight: bolder;">
-                        Ambros Restaurant
-                    </h1>
-                    <h3 class="text-white">
-                        Treat your belly with our Authentic and Premium dishes.
-                    </h3>
-                </div>
-                <div class="row mx-auto" style="width: 80%;">
-                    <div data-aos="fade-up" class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/iconmenu.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 17px; height: 150px;" >
+            <div class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
+                <h1 class="text-white" style="font-weight: bolder;">
+                    Ambros Restaurant
+                </h1>
+                <h3 class="text-white">
+                    Treat your belly with our Authentic and Premium dishes.
+                </h3>
+            </div>
+            <div class="row mx-auto" style="width: 80%;">
+                <div data-aos="fade-up" class="col d-flex">
+                    <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
+                    border-style: solid;border-width: 5px;border-color:purple;
+                    ">
+                        <div class="mx-auto pt-5">
+                            <img class="" src="/img/iconmenu.png" width="150" height="150" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-white text-center" style="font-size: 17px; height: 150px;" >
                             <h5 class="card-title">Menu</h5>
-                            <div class="card-text">Want to see the menu?</div>
-                            <div class="card-text">Click the button</div>
-                            <div class="card-text mb-2">down below!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <a href="menu.html">
-                                    <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;">See Menu</button>
-                                </a>
-                                
-                            </div>
-                            
+                                <div class="card-text">Want to see the menu?</div>
+                                <div class="card-text">Click the button</div>
+                                <div class="card-text mb-2">down below!</div>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="menu.html">
+                                <button class="btn mt-3 btn-success btnBook mb-4" style="width:150px;">See Menu</button>
+                            </a>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/about.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="col d-flex">
+                    <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
+                    border-style: solid;border-width: 5px;border-color:purple;
+                    ">
+                        <div class="mx-auto pt-5">
+                            <img class="" src="/img/about.png" width="150" height="150" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
                             <h5 class="card-title">About Us</h5>
-                            <div class="card-text mb-2">Let's see our team!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <a href="/aboutus.html">
-                                    <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">About Us</button>
-                                </a>
-                                
-                            </div>
-                            
+                        <div class="card-text mb-2">Let's see our team!</div>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="/aboutus.html">
+                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">About Us</button>
+                            </a>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1500"  class="col d-flex">
-                        <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
-                        border-style: solid;border-width: 5px;border-color:purple;
-                        ">
-                            <div class="mx-auto pt-5">
-                                <img class="" src="/img/user.png" width="150" height="150" alt="Card image cap">
-                            </div>
-                            <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500"  class="col d-flex">
+                    <div class="card bg-transparent mx-auto" style="border-radius: 2rem; flex-shrink: 0; flex: 1;
+                    border-style: solid;border-width: 5px;border-color:purple;
+                    ">
+                        <div class="mx-auto pt-5">
+                            <img class="" src="/img/user.png" width="150" height="150" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-white text-center" style="font-size: 15px; height: 150px;" >
                             <h5 class="card-title">Reserve?</h5>
                             <div class="card-text mb-2">Book a table now!</div>
-                            </div>
-                            <div class="mx-auto">
-                                <a href="booktable.html">
-                                    <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">Book</button>
-                                </a>
-                                
-                            </div>
-                            
+                        </div>
+                        <div class="mx-auto">
+                            <a href="booktable.html">
+                                <button class="btn mt-3 btn-success btnBook mb-4"  style="width:150px;">Book</button>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <!-- landing 2 done -->
 
 <!-- landing 3 -->
-<div class="container-fluid my-5" style="min-height: 75vh;">
-    <div data-aos="fade-up" class="row d-flex justify-content-center" style="padding-top: 75px; padding-bottom: 100px;">
-        <div  class="col-3 text-right">
-            <div class="text-white position-relative" style="font-size: 40px; top: -5px;">
-                Discover
+        <div class="container-fluid my-5" style="min-height: 75vh;">
+            <div data-aos="fade-up" class="row d-flex justify-content-center" style="padding-top: 75px; padding-bottom: 100px;">
+                <div  class="col-3 text-right">
+                    <div class="text-white position-relative" style="font-size: 40px; top: -5px;">
+                        Discover
+                    </div>
+                    <div class="text-white position-relative" style="font-weight: bolder; font-size: 50px; top:-30px">
+                        Our Menu
+                    </div>
+                </div>
+                <div class="col-3">
+                    <span class="text-white" style="font-size: 20px;">
+                        Ambros is a restaurant that will treat your belly with the Authentic and Premium dishes.
+                    </span>
+                </div>
             </div>
-            <div class="text-white position-relative" style="font-weight: bolder; font-size: 50px; top:-30px">
-                Our Menu
+            <div class="position-relative" style="top: -100px;">
+                <img data-aos="fade-up" data-aos-duration="1000" src="/img/menulanding3.png" width="100%" height="100%" alt="">
             </div>
         </div>
-        <div class="col-3">
-            <span class="text-white" style="font-size: 20px;">
-                Ambros is a restaurant that will treat your belly with the Authentic and Premium dishes.
-
-            </span>
-        </div>
-        
-        
-    </div>
-
-
-    <div class="position-relative" style="top: -100px;">
-        <img data-aos="fade-up" data-aos-duration="1000" src="/img/menulanding3.png" width="100%" height="100%" alt="">
-    </div>
-
-</div>
 <!-- landing 3 done -->
 
-        <!-- landing  4 -->
+<!-- landing  4 -->
         <div class="container-fluid my-5" style="min-height: 50vh;">
             <div data-aos="fade-up" class="w-50 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
                 <h2 class="text-white">
@@ -244,116 +229,92 @@
                     Ambros uses the best quality and fresh ingredients to you for best experience
                 </h3>
             </div>
-
             <div class="position-relative w-75 mx-auto my-5" style="top: -100px;">
                 <img data-aos="fade-up" src="/img/daging.png" width="100%" height="100%" alt="">
             </div>
         </div>
-        <!-- landing 4 done -->
+<!-- landing 4 done -->
 
 
 <!-- landing 5 -->
-<div class="container-fluid my-5 px-0 mx-0" style="min-height: 75vh;">
-    <div data-aos="fade-up" class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
-
-        <h1 class="text-white" style="font-weight: bolder;">
-            Ambros Restaurant
-        </h1>
-        <h3 class="text-white">
-            Treat your belly with our Authentic and Premium dishes
-        </h3>
-    </div>
-
-    <div class="position-relative mx-auto my-5 d-flex flex-column align-content-center justify-content-center" style="top: -100px; min-height: 55vh; background-image: url(/img/restaurant.jpg);background-size: cover; background-repeat: no-repeat;">
-     <div data-aos="fade-up" class="content-isi text-white mx-auto text-center position-relative">
-        <h2 style="font-size: 25px; font-weight: 900;">Reservation</h2>
-        <h1 style="font-weight: 900;">Book Your Table</h1>
-        <a href="booktable.html">
-            <button class="btn mt-3 btn-success btnBook">Book a Table</button>
-        </a>
-        
-     </div>
-    </div>
-</div>
+        <div class="container-fluid my-5 px-0 mx-0" style="min-height: 75vh;">
+            <div data-aos="fade-up" class="w-75 mx-auto text-center " style="padding-top: 75px; padding-bottom: 100px;">
+                <h1 class="text-white" style="font-weight: bolder;">
+                    Ambros Restaurant
+                </h1>
+                <h3 class="text-white">
+                    Treat your belly with our Authentic and Premium dishes
+                </h3>
+            </div>
+            <div class="position-relative mx-auto my-5 d-flex flex-column align-content-center justify-content-center" style="top: -100px; min-height: 55vh; background-image: url(/img/restaurant.jpg);background-size: cover; background-repeat: no-repeat;">
+                <div data-aos="fade-up" class="content-isi text-white mx-auto text-center position-relative">
+                    <h2 style="font-size: 25px; font-weight: 900;">Reservation</h2>
+                    <h1 style="font-weight: 900;">Book Your Table</h1>
+                    <a href="booktable.html">
+                        <button class="btn mt-3 btn-success btnBook">Book a Table</button>
+                    </a>
+                </div>
+            </div>
+        </div>
 <!-- landing 5 done -->
 
 
 
 <!-- ----- FOOTER--- -- -->
-<footer>
-    <div class="footer-content">
-        <div class="row text-white w-75 mx-auto" >
-            <div class="col">
-                <p style="font-size: 17px; font-weight: bolder;">Follow Us</p>
-                    <div class="row" style="margin-top: none;">
-                        <div class="col-1"><img src="/img/sosmed.png" alt="" width="150px" height="25px"></div>
+        <footer>
+            <div class="footer-content">
+                <div class="row text-white w-75 mx-auto" >
+                    <div class="col">
+                        <p style="font-size: 17px; font-weight: bolder;">Follow Us</p>
+                            <div class="row" style="margin-top: none;">
+                                <div class="col-1"><img src="/img/sosmed.png" alt="" width="150px" height="25px"></div>
+                            </div>
+                        <br>
+                        <p style="font-size: 17px; font-weight: bolder;">Ambros Restaurant</p>
+                        <a href="#"><p style="font-size: 15px; padding: 6px 0;">Find a Restaurant</p></a>
+                        <a href="#"><p style="font-size: 15px; padding: 6px 0;">Order Status</p></a>
+                        <a href="#"><p style="font-size: 15px; padding: 6px 0;">Shopping Help</p></a>
+                        <a href="#"><p style="font-size: 15px; padding: 6px 0;">Improve Us</p></a>
+                        <br><br>
                     </div>
-                <br>
-                <p style="font-size: 17px; font-weight: bolder;">Ambros Restaurant</p>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Find a Restaurant</p></a>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Order Status</p></a>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Shopping Help</p></a>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Improve Us</p></a>
-                <br><br>
+                    <div class="col">
+                        <p style="font-size: 17px; font-weight: bolder;">Term and Condition</p>
+                        <a href="#"><p style="font-size: 15px; padding: 6px 0;">Delivery</p></a>
+                        <a href="#"><p style="font-size: 15px; padding: 6px 0;">Booking Seats</p></a>
+                        <br>
+                    <p style="font-size: 17px; font-weight: bolder;">Career</p>
+                    <a href="#"><p style="font-size: 15px; padding: 6px 0;">Ambros and Business</p></a>
+                    <a href="#"><p style="font-size: 15px; padding: 6px 0;">Partnership</p></a>
+                        
+                    </div>
+                    <div class="col">
+                    <p style="font-size: 17px; font-weight: bolder;">Want Invest?</p>
+                    <a href="#"><p style="font-size: 15px; padding: 6px 0;">Job Opportunities</p></a>
+                    <a href="#"><p style="font-size: 15px; padding: 6px 0;">Investors</p></a>
+                    <a href="#"><p style="font-size: 15px; padding: 6px 0;">Events</p></a>
+                    <br>
+                    <a href="#"><p style="font-size: 15px; font-weight: bolder;">Frequently Asked Question</p></a>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="isi footer text-white w-75 mx-auto" style="padding-top:100px;">
+                        More way to shop: Find a <span style="color:rgb(189, 27, 189)">Restaurant near you</span>. Or call 021-5555-6679
+                        <p class="border-bottom py-2"></p>   
+                        Copyright 2022 Ambros. All right served. Privacy Policy    | Terms of use     | Site Map   Indonesia
+                        <br><br>
+                        <br>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <p style="font-size: 17px; font-weight: bolder;">Term and Condition</p>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Delivery</p></a>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Booking Seats</p></a>
-                <br>
-               <p style="font-size: 17px; font-weight: bolder;">Career</p>
-               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Ambros and Business</p></a>
-               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Partnership</p></a>
-                
-            </div>
-            <div class="col">
-               <p style="font-size: 17px; font-weight: bolder;">Want Invest?</p>
-               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Job Opportunities</p></a>
-               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Investors</p></a>
-               <a href="#"><p style="font-size: 15px; padding: 6px 0;">Events</p></a>
-               <br>
-               <a href="#"><p style="font-size: 15px; font-weight: bolder;">Frequently Asked Question</p></a>
-
-            </div>
-        </div>
-
-        <div>
-            <div class="isi footer text-white w-75 mx-auto" style="padding-top:100px;">
-                More way to shop: Find a <span style="color:rgb(189, 27, 189)">Restaurant near you</span>. Or call 021-5555-6679
-                <p class="border-bottom py-2"></p>   
-                Copyright 2022 Ambros. All right served. Privacy Policy    | Terms of use     | Site Map   Indonesia
-                <br><br>
-                <br>
-            </div>
-        </div>
-        
-
-    </div>
-
-
-</footer>
+        </footer>
 <!-- --- FOOTER DONE --- -->
-
 
 <!-- content end -->
     </div> 
 
-
 <!-- wrapper end -->
 </div>
-
-
-     
-    
-     
-
-
-
-
-
-
-
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
@@ -361,20 +322,16 @@
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
     <script>
 
-AOS.init();
+        AOS.init();
         $(document).ready(function(){
 
 
             var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
-        console.log(existingEntries);
         if(existingEntries == null){
-            console.log("not hidden");
             $(".bookingEmpty").removeClass("hidden");
         }else{
-            console.log("hidden");
             $(".bookingEmpty").addClass("hidden");
 
             existingEntries.forEach(e => {
@@ -444,7 +401,6 @@ AOS.init();
 
                 $("#sidebarCollapse").on('click', function(){ 
                     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        console.log(">20");
                         $("#sidebar").removeClass('hides'); 
                         $("#bars").toggleClass('colorBars'); 
                     }else{
@@ -459,9 +415,6 @@ AOS.init();
                 $("#keranjangCollapse").on('click', function(){ 
                    
                         $(".qrList").toggleClass('qrListToggle'); 
-                        console.log("tes");
-
-                       
                 })
             
         })
@@ -471,32 +424,31 @@ AOS.init();
         }
 
         // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
 
-}
+        }
 
-var mybutton = document.getElementById("myBtn");
-var bars = document.getElementById("bars");
+        var mybutton = document.getElementById("myBtn");
+        var bars = document.getElementById("bars");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
 
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    $("#sidebar").addClass('hides'); 
-    $("#sidebar").removeClass('active'); 
-    $("#bars").removeClass('colorBars'); 
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            $("#sidebar").addClass('hides'); 
+            $("#sidebar").removeClass('active'); 
+            $("#bars").removeClass('colorBars'); 
 
-  } else {
-    mybutton.style.display = "none";
-    
-  }
-}
-
+        } else {
+            mybutton.style.display = "none";
+            
+        }
+        }
 
     </script>
 
