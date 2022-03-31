@@ -32,6 +32,7 @@
 </head>
 <body  id="scrollUp">
 
+    <!-- Book Right Side Bar -->
     <div class="qrList hidden">
         
         <div class="bookingEmpty mt-2 mx-auto" style="width: 18rem;">
@@ -42,15 +43,11 @@
                   <a href="/booktable.html">
                     <button class="btn mt-3 btn-success btnBook px-5">Book a Table</button>
                   </a>
-                
               </a>
-              
             </div>
           </div>
-
-          
-
-        </div>
+    </div>
+    <!-- Book Right Side Bar Done -->
 
 <!-- SIDEBAR -->
 <nav id="sidebar" class="hidden">
@@ -60,29 +57,29 @@
     </div>
     <ul class="list-unstyled components">
         <li class="active">
-            <a href="#">
-                <i class="fas fa-home pr-2"></i>
+            <a href="/index.html">
+                <img src="/img/homelogo.png" style="padding-right: 7px;" height="20" alt="">
                 Home</a>
         </li>	
         <li>
             <a href="/menu.html">
-                    <i class="fas fa-pizza-slice pr-2"></i>
+                <img src="/img/menulogo.png" style="padding-right: 7px;" height="20" alt="">
                     Menu</a>
         </li>
         <li>
-            <a href="#">
-                <i class="fas fa-solid fa-user pr-2"></i>
-                Admin</a>
+            <a href="/aboutus.html">
+                <img src="/img/aboutlogo.png" style="padding-right: 7px;" height="20" alt="">
+                About Us</a>
         </li>
         <li>
-            <a href="#">
-                <i class="fas fa-info-circle pr-2"></i>
-                About</a>
+            <a href="/booktable.html">
+                <img src="/img/tablelogo.png" style="padding-right: 7px;" height="20" alt="">
+                Book a Table</a>
         </li>
 
     </ul>
 </nav>
-<!-- SIDEBAR END -->
+<!-- SIDEBAR DONE -->
 
     <!-- nav top -->
     <nav class="navbar fixed-top d-flex bg-transparent justify-content-between py-3 px-3" id="navTop">
@@ -94,19 +91,23 @@
             <img src="/img/task.png" id="keranjangImg" height="30" alt="">
         </a>  
     </nav>
-    <!-- nav top end -->
+    <!-- nav top done -->
    
 <div class="wrapper">
 
     <div id="content">    
-<!-- landing 1 -->
+<!-- Menu 1 -->
 <div class="container-fluid my-5" style="min-height: 25vh;">
+    <!-- Title -->
             <div class="row" style="min-height: 20vh;" >
                 <div class="col-9 text-white" style="margin-top: 75px; margin-left: 200px; ">
                        <h1>Our Menu</h1>
                        <hr color="white">
                 </div>
             </div>
+    <!-- Title done --> 
+
+        <!-- Category Menu -->
             <div class="category">
                 <div class="row mx-auto">
                     <div class="col">
@@ -126,6 +127,9 @@
                     </div>
                 </div>
             </div>
+        <!-- Category Menu done -->
+
+        <!-- Appetizer -->
             <div class="row" style="min-height: 30vh;" >
                 <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px;" id="Appetizer">
                     <h1>Appetizer</h1>
@@ -146,6 +150,10 @@
                 <div class="carousel-cell"><img src="/img/appe5.png"/></div>\
                 <div class="carousel-text"><h3>Chicken Liver Pate with Butter Sun Dried  Tomatoes Bread <br> IDR  54.000 <br> <<<<< </h3></div>
             </div>
+
+        <!-- Appetizer done -->
+        
+        <!-- Main course -->
             <div class="row" style="min-height: 30vh;" >
                 <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px;" id="MainCourse">
                     <h1>Main Course</h1>
@@ -166,6 +174,9 @@
                 <div class="carousel-cell"><img src="/img/maindish5.png"/></div>
                 <div class="carousel-text"><h3>Beef Bourguignon <br> IDR  60.000 <br> <<<<< </h3></div>
             </div>
+        <!-- Main course done -->
+
+        <!--Side dish -->
             <div class="row" style="min-height: 30vh;" id="SideDish">
                 <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px; ">
                     <h1>Side dish</h1>
@@ -186,6 +197,9 @@
                 <div class="carousel-cell"><img src="/img/sidedish5.png"/></div>
                 <div class="carousel-text"><h3>Zucchini Pizza Bites <br> IDR  45.000 <br> <<<<< </h3></div>
             </div>
+        <!-- Side dish done -->
+        
+        <!-- Dessert -->
             <div class="row" style="min-height: 30vh;" id="Dessert" >
                 <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px; ">
                     <h1>Dessert</h1>
@@ -206,6 +220,9 @@
                 <div class="carousel-cell"><img src="/img/dessert5.png"/></div>
                 <div class="carousel-text"><h3>Whole Wheat-Oat Waffles <br> IDR  38.000 <br> <<<<< </h3></div>
             </div>
+        <!-- Dessert done -->
+
+        <!-- Beverage -->
             <div class="row" style="min-height: 30vh;" id="Beverage" >
                 <div class="col-9 text-white" style="margin-top: 25px; margin-left: 200px; ">
                     <h1>Beverage</h1>
@@ -226,8 +243,9 @@
                 <div class="carousel-cell"><img src="/img/bev5.png"/></div>
                 <div class="carousel-text"><h3>Thai Milk Tea <br> IDR  25.000 <br> <<<<< </h3></div>
             </div>
+        <!-- Beverage done -->
 </div>
-<!-- landing 1 done -->
+<!-- Menu done -->
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">
 <i class="fas fa-arrow-up text-white"></i>
@@ -239,6 +257,9 @@
         <div class="row text-white w-75 mx-auto" >
             <div class="col">
                 <p style="font-size: 15px; font-weight: bolder;">Follow Us</p>
+                    <div class="row" style="margin-top: none;">
+                        <div class="col-1"><img src="/img/sosmed.png" alt="" width="150px" height="25px"></div>
+                    </div>
                 <br>
                 <p style="font-size: 15px; font-weight: bolder;">Ambros Restaurant</p>
                 <a href="#"><p style="font-size: 15px; padding: 6px 0;">Find a Restaurant</p></a>
@@ -246,33 +267,25 @@
                 <a href="#"><p style="font-size: 15px; padding: 6px 0;">Shopping Help</p></a>
                 <a href="#"><p style="font-size: 15px; padding: 6px 0;">Improve Us</p></a>
                 <br><br>
-                <p style="font-size: 15px; font-weight: bolder;">Frequently Asked Question</p>
             </div>
             <div class="col">
                 <p style="font-size: 15px; font-weight: bolder;">Term and Condition</p>
                 <a href="#"><p style="font-size: 15px; padding: 6px 0;">Delivery</p></a>
                 <a href="#"><p style="font-size: 15px; padding: 6px 0;">Booking Seats</p></a>
                 <br>
-                <p style="font-size: 15px; font-weight: bolder;">Change Theme</p>
-                
-            </div>
-            <div class="col">
                <p style="font-size: 15px; font-weight: bolder;">Career</p>
                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Ambros and Business</p></a>
                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Partnership</p></a>
-               <br>
+                
+            </div>
+            <div class="col">
                <p style="font-size: 15px; font-weight: bolder;">Want Invest?</p>
                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Job Opportunities</p></a>
                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Investors</p></a>
                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Events</p></a>
-                
+               <br>
+               <a href="#"><p style="font-size: 15px; font-weight: bolder;">Frequently Asked Question</p></a>
 
-            </div>
-            <div class="col">
-                <p style="font-size: 15px; font-weight: bolder;">Account</p>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Create New Account</p></a>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Manage Your Account</p></a>
-                <a href="#"><p style="font-size: 15px; padding: 6px 0;">Forgot Password</p></a>
             </div>
         </div>
 
